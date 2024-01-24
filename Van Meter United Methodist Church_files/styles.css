@@ -1,0 +1,360 @@
+@charset "utf-8";
+/* CSS Document */
+
+div#ministriesnav {
+  float: left;
+  margin-left: 115px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+div#ministriesnav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+div#ministriesnav li {
+  float: left;
+}
+div#ministriesnav a {
+  height: 0;
+  overflow: hidden;
+  display: block;
+  background-image: url(Photos/originalphotos/ministriesnav.jpg);
+  background-position: center;
+  width: 160px;
+}
+div#ministriesnav ul li a {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  height: 20px;
+  text-indent: -5000px;
+}
+
+li#outreach a {
+  background-position: left top;
+}
+li#missions a {
+  background-position: -160px top;
+}
+li#groups a {
+  background-position: -320px top;
+}
+li#events a {
+  background-position: -480px top;
+}
+
+li#outreach a:hover {
+  background-position: left -20px;
+}
+li#missions a:hover {
+  background-position: -160px -20px;
+}
+li#groups a:hover {
+  background-position: -320px -20px;
+}
+li#events a:hover {
+  background-position: -480px -20px;
+}
+
+div#forms {
+  float: left;
+  margin-left: 250px;
+}
+div#forms ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+div#forms li {
+  float: left;
+}
+div#forms a {
+  height: 0;
+  overflow: hidden;
+  display: block;
+  background-image: url(Photos/originalphotos/formsnav.jpg);
+  background-position: center;
+  width: 120px;
+}
+div#forms ul li a {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  height: 30px;
+  text-indent: -5000px;
+}
+
+li#prayerrequest a {
+  background-position: left top;
+}
+li#buildingrequest a {
+  background-position: -120px top;
+}
+li#informationrequest a {
+  background-position: -240px top;
+}
+
+li#prayerrequest a:hover {
+  background-position: left -30px;
+}
+li#buildingrequest a:hover {
+  background-position: -120px -30px;
+}
+li#informationrequest a:hover {
+  background-position: -240px -30px;
+}
+
+table#mintable {
+  margin-left: 115px;
+}
+
+td#minitem {
+  border: 1px solid black;
+  width: 200px;
+  background-color: #ccc;
+  text-align: center;
+}
+
+div#container {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ff9;
+  width: 80%;
+}
+
+div#content {
+  background: #ff9;
+  float: left;
+  padding: 10px;
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+div#footer {
+  background: #ff9;
+  clear: both;
+  text-align: center;
+}
+
+div#welcomeparagraph {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+div#welcomeschedule {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+div#umcimage {
+  margin-left: 200px;
+}
+
+div#welcomeimage {
+  float: left;
+  margin-left: 25px;
+}
+
+div#homecalendar {
+  float: right;
+  margin-left: 5px;
+}
+
+div#churchbuilding {
+  margin-left: 50px;
+}
+
+div#meetstaff {
+  text-align: center;
+}
+
+th#staffpic {
+  width: 200px;
+  border: 1px solid black;
+}
+
+th#staffbio {
+  width: 500px;
+  border: 1px solid black;
+}
+
+h4 {
+  text-align: center;
+}
+
+table#worshipschedule {
+  border: 1px solid black;
+  margin-left: 115px;
+}
+
+th#scriptures {
+  width: 300px;
+  border: 1px solid black;
+}
+
+th#celebrations {
+  width: 300px;
+  border: 1px solid black;
+}
+
+div#prayer {
+  text-align: center;
+  clear: both;
+}
+
+table#publications {
+  margin-left: 115px;
+  margin-top: 50px;
+}
+
+th#pubimage {
+  border: 1px solid black;
+  width: 300px;
+}
+
+th#pubtitle {
+  border: 1px solid black;
+  width: 300px;
+}
+
+table#phototable {
+  border: 1px solid black;
+  margin-left: 50px;
+  width: 400px;
+}
+
+td#photopic {
+  border: 1px solid black;
+  width: 200px;
+}
+
+td#info {
+  text-align: center;
+  padding: 10px;
+}
+
+table#contactinfo {
+  margin-left: 300px;
+}
+
+div#calendar {
+  margin-left: 80px;
+}
+
+div#churchnav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-left: 75px;
+}
+div#churchnav li {
+  float: left;
+}
+div#churchnav a {
+  height: 0;
+  overflow: hidden;
+  display: block;
+  background-image: url(Photos/originalphotos/churchnav.jpg);
+  background-position: center;
+  width: 120px;
+}
+div#churchnav ul li a {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  height: 50px;
+  text-indent: -5000px;
+}
+
+li#directions a {
+  background-position: left top;
+}
+li#history a {
+  background-position: -120px top;
+}
+li#services a {
+  background-position: -240px top;
+}
+li#sundayschool a {
+  background-position: -360px top;
+}
+li#churchstaff a {
+  background-position: -480px top;
+}
+li#believe a {
+  background-position: -600px top;
+}
+
+li#directions a:hover {
+  background-position: left -50px;
+}
+li#history a:hover {
+  background-position: -120px -50px;
+}
+li#services a:hover {
+  background-position: -240px -50px;
+}
+li#sundayschool a:hover {
+  background-position: -360px -50px;
+}
+li#churchstaff a:hover {
+  background-position: -480px -50px;
+}
+li#believe a:hover {
+  background-position: -600px -50px;
+}
+
+div#paragraph {
+  text-align: center;
+  clear: both;
+}
+
+table#churchstaff {
+  margin-left: 75px;
+  margin-top: 25px;
+}
+
+div#pastorimage {
+  float: left;
+  margin-right: 20px;
+}
+
+table#biblesearch {
+  margin-left: 260px;
+  border: 1px solid black;
+}
+
+div#verseoftheday {
+  margin-left: 275px;
+  margin-top: 10px;
+}
+
+div#description {
+  float: left;
+  margin-left: 50px;
+}
+
+div#descriptiontwo {
+  float: left;
+  width: 450px;
+  margin-left: 50px;
+}
+
+h2#photoheading {
+  margin-left: 350px;
+  font-size: 30px;
+}
+
+th#photothumb {
+  padding: 15px;
+}
