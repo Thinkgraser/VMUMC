@@ -1,18 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required Scripts -->
+    <script src="navbar.js" defer></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- End Scripts -->
+    <!-- Required Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <!-- End Stylesheets -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Van Meter United Methodist Church</title>
-    <!-- Script Must Be Included In All HTML Files Other Than banner.html, navbar.html and footer.html -->
-    <script src="navbar.js"></script>
-    <!-- End Script -->
   </head>
   <!-- Banner -->
-  <div id="banner"></div>
+  <div id="container" class="m-t-10">
+    <img
+      src="./images/websitebanner.jpg"
+      style="width: 100%; border: none; text-indent: -5000px"
+    />
+  </div>
   <!-- End Banner -->
   <!-- Navbar -->
-  <nav id="navbar"></nav>
+  <div id="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        style="margin-left: 10px"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/kidscare.html"> Kids Care </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdown08"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Our Church
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-dark bg-dark shadow"
+              aria-labelledby="dropdown08"
+            >
+              <a class="dropdown-item" href="/join-us.html"> Join Us </a>
+              <a class="dropdown-item" href="/directions.html">
+                Church Directions
+              </a>
+              <a class="dropdown-item" href="/community.html">
+                Church Community
+              </a>
+              <a class="dropdown-item" href="/services.html">
+                Church Services
+              </a>
+              <a class="dropdown-item" href="/education.html">
+                Christian Education
+              </a>
+              <a class="dropdown-item" href="/staff.html"> Church Staff </a>
+              <a class="dropdown-item" href="/beliefs.html"> Church Beliefs </a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/worship.html"> Worship </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ministries.html"> Ministries </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/photos.html"> Photos </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/calendar.html"> Calendar </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/publications.html"> Publications </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdown08"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Contact Us
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-dark bg-dark shadow"
+              aria-labelledby="dropdown08"
+            >
+              <a class="dropdown-item" href="/contact.html"> Contact Info </a>
+              <a class="dropdown-item" href="/prayer-request.html">
+                Prayer Request
+              </a>
+              <a class="dropdown-item" href="/building-request.html">
+                Building Use Request
+              </a>
+              <a class="dropdown-item" href="/information-request.html">
+                Information Request
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
   <!-- End Navbar -->
   <body>
     <div class="home">
@@ -523,6 +638,10 @@
         </div>
       </div>
     </div>
-    <footer id="footer"></footer>
+    <div id="container">
+      <footer class="p-t-50">
+        <p>© 2024 - Van Meter United Methodist Church. All rights reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
