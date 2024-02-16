@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Required Scripts -->
+    <script src="navbar.js" defer></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- End Scripts -->
+    <!-- Required Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <!-- End Stylesheets -->
+
+    <script>
+      function formatDate() {
+        // Get the date input value
+        var inputDate = document.getElementById("date").value;
+
+        // Split the date into year, month, and day
+        var parts = inputDate.split("-");
+
+        // Rearrange the parts to format as mm/dd/yyyy
+        var formattedDate = parts[1] + "-" + parts[2] + "-" + parts[0];
+        console.log(formattedDate);
+
+        // Set the formatted date back to the input
+        document.getElementById("field-c5b0d72b8c09b1c").value = formattedDate;
+        document.getElementById("date").disabled = true;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Banner -->
+    <div id="container" class="m-t-10">
+      <img
+        src="./images/websitebanner.jpg"
+        style="width: 100%; border: none; text-indent: -5000px"
+      />
+    </div>
+    <!-- End Banner -->
+    <!-- Navbar -->
+    <div id="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="margin-left: 10px"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/kidscare.html"> Kids Care </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown08"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Our Church
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-dark bg-dark shadow"
+                aria-labelledby="dropdown08"
+              >
+                <a class="dropdown-item" href="/join-us.html"> Join Us </a>
+                <a class="dropdown-item" href="/directions.html">
+                  Church Directions
+                </a>
+                <a class="dropdown-item" href="/community.html">
+                  Church Community
+                </a>
+                <a class="dropdown-item" href="/services.html">
+                  Church Services
+                </a>
+                <a class="dropdown-item" href="/education.html">
+                  Christian Education
+                </a>
+                <a class="dropdown-item" href="/staff.html"> Church Staff </a>
+                <a class="dropdown-item" href="/beliefs.html">
+                  Church Beliefs
+                </a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/worship.html"> Worship </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/ministries.html"> Ministries </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/photos.html"> Photos </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/calendar.html"> Calendar </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/publications.html"> Publications </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown08"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Contact Us
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-dark bg-dark shadow"
+                aria-labelledby="dropdown08"
+              >
+                <a class="dropdown-item" href="/contact.html"> Contact Info </a>
+                <a class="dropdown-item" href="/prayer-request.html">
+                  Prayer Request
+                </a>
+                <a class="dropdown-item" href="/building-request.html">
+                  Building Use Request
+                </a>
+                <a class="dropdown-item" href="/information-request.html">
+                  Information Request
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- End Navbar -->
+
+    <div id="container" class="px-3">
+      <div class="row mx-auto pt-5">
+        <h2 class="text-center">Building Use Request Form</h2>
+      </div>
+
+      <hr />
+      <form
+        enctype="multipart/form-data"
+        method="post"
+        action="http://www.response-o-matic.com/mail.php"
+        accept-charset="UTF-8"
+        onsubmit="formatDate()"
+      >
+        <div>
+          <input
+            type="hidden"
+            name="acctid"
+            id="acctid"
+            value="u7p9qzi9dh3ql0yy"
+          />
+          <input type="hidden" name="formid" id="formid" value="786297" />
+          <input
+            type="hidden"
+            name="required_vars"
+            id="required_vars"
+            value="name,field-792704759794cbb,field-c5b0d72b8c09b1c,field-c771266992e254f,field-038e996398a85f1"
+          />
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Name"
+          />
+          <label for="name">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="field-792704759794cbb"
+            placeholder="Phone Number"
+            name="field-792704759794cbb"
+          />
+          <label for="field-792704759794cbb">Phone Number</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="Email Address"
+            name="email"
+          />
+          <label for="email">Email Address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            required
+            type="date"
+            name="date"
+            id="date"
+            size="20"
+            class="form-control"
+          />
+          <input
+            required
+            type="hidden"
+            name="field-c5b0d72b8c09b1c"
+            id="field-c5b0d72b8c09b1c"
+          />
+          <label for="date">Date Building Is Needed</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea
+            class="form-control"
+            placeholder="Reason For Use"
+            id="field-c771266992e254f"
+            name="field-c771266992e254f"
+            style="height: 150px"
+          ></textarea>
+          <label for="field-c771266992e254f">Reason For Use</label>
+        </div>
+
+        <label>What Rooms Will Be Needed</label>
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            name="field-038e996398a85f1[]"
+            id="field-038e996398a85f1_0"
+            value="Fellowship Hall"
+          />
+          <label class="form-check-label" for="field-038e996398a85f1_0"
+            >Fellowship Hall</label
+          >
+        </div>
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            name="field-038e996398a85f1[]"
+            id="field-038e996398a85f1_1"
+            value="Bathrooms"
+          />
+          <label class="form-check-label" for="field-038e996398a85f1_1"
+            >Bathrooms</label
+          >
+        </div>
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            name="field-038e996398a85f1[]"
+            id="field-038e996398a85f1_2"
+            value="Kitchen"
+          />
+          <label class="form-check-label" for="field-038e996398a85f1_2"
+            >Kitchen</label
+          >
+        </div>
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            name="field-038e996398a85f1[]"
+            id="field-038e996398a85f1_3"
+            value="Sanctuary"
+          />
+          <label class="form-check-label" for="field-038e996398a85f1_3"
+            >Sanctuary</label
+          >
+        </div>
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            name="field-038e996398a85f1[]"
+            id="field-038e996398a85f1_4"
+            value="Sanctuary Overflow"
+          />
+          <label class="form-check-label" for="field-038e996398a85f1_4"
+            >Sanctuary Overflow</label
+          >
+        </div>
+        <div class="form-check form-switch mb-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            name="field-038e996398a85f1[]"
+            id="field-038e996398a85f1_5"
+            value="Class Rooms"
+          />
+          <label class="form-check-label" for="field-038e996398a85f1_5"
+            >Class Rooms</label
+          >
+        </div>
+
+        <button class="btn btn-primary w-100" type="submit">Submit form</button>
+      </form>
+    </div>
+
+    <!-- Start Footer -->
+    <div id="container">
+      <footer class="pt-5">
+        <p>© 2024 - Van Meter United Methodist Church. All rights reserved.</p>
+      </footer>
+    </div>
+    <!-- End Footer -->
+  </body>
+</html>
