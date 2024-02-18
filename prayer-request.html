@@ -132,79 +132,100 @@
     </div>
     <!-- End Navbar -->
 
-    <div id="container" class="px-3 text-center">
-      <div class="row mx-auto text-center pt-5">
-        <h2>Prayer Request Form</h2>
-      </div>
-
-      <hr />
-      <form
-        enctype="multipart/form-data"
-        method="post"
-        action="http://www.response-o-matic.com/mail.php"
-        accept-charset="UTF-8"
+    <div id="container" class="px-3">
+      <div
+        class="modal modal-sheet position-static d-block p-4 py-md-5"
+        tabindex="-1"
+        role="dialog"
+        id="modalSignin"
       >
-        <div>
-          <input
-            type="hidden"
-            name="acctid"
-            id="acctid"
-            value="u7p9qzi9dh3ql0yy"
-          />
-          <input type="hidden" name="formid" id="formid" value="785453" />
-          <input
-            type="hidden"
-            name="required_vars"
-            id="required_vars"
-            value="name,field-0edfa9d0160c7ba,field-e3e48ab5d3b6e30,field-6b96a67941ea592"
-          />
+        <div class="modal-dialog-centered" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+              <h1 class="fw-bold mb-0 fs-2">Prayer Request Form</h1>
+            </div>
+
+            <div class="modal-body p-5 pt-0">
+              <form
+                enctype="multipart/form-data"
+                method="post"
+                action="http://www.response-o-matic.com/mail.php"
+                accept-charset="UTF-8"
+              >
+                <div>
+                  <input
+                    type="hidden"
+                    name="acctid"
+                    id="acctid"
+                    value="u7p9qzi9dh3ql0yy"
+                  />
+                  <input
+                    type="hidden"
+                    name="formid"
+                    id="formid"
+                    value="785453"
+                  />
+                  <input
+                    type="hidden"
+                    name="required_vars"
+                    id="required_vars"
+                    value="name,field-0edfa9d0160c7ba,field-e3e48ab5d3b6e30,field-6b96a67941ea592"
+                  />
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="
+              Requestor's Name"
+                  />
+                  <label for="name"> Requestor's Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="field-0edfa9d0160c7ba"
+                    placeholder="Prayer Need for Whom"
+                    name="field-0edfa9d0160c7ba"
+                  />
+                  <label for="field-0edfa9d0160c7ba"
+                    >Prayer Need for Whom</label
+                  >
+                </div>
+                <div class="form-floating mb-3">
+                  <select class="form-select" id="length">
+                    <option selected disabled>Please Select a length</option>
+                    <option value="1 - 2 Weeks">1 - 2 Weeks</option>
+                    <option value="3 - 4 Weeks">3 - 4 Weeks</option>
+                    <option value="Indefinite">Indefinite</option>
+                    <option value="Unknown">Unknown</option>
+                  </select>
+                  <label for="length">Length of Request</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea
+                    class="form-control"
+                    placeholder="Reason for Prayer"
+                    id="field-6b96a67941ea592"
+                    name="field-6b96a67941ea592"
+                    style="height: 150px"
+                  ></textarea>
+                  <label for="field-6b96a67941ea592">Reason for Prayer</label>
+                </div>
+                <button class="btn btn-primary w-100" type="submit">
+                  Submit form
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="form-floating mb-3">
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            placeholder="
-          Requestor's Name"
-          />
-          <label for="name"> Requestor's Name</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input
-            type="text"
-            class="form-control"
-            id="field-0edfa9d0160c7ba"
-            placeholder="Prayer Need for Whom"
-            name="field-0edfa9d0160c7ba"
-          />
-          <label for="field-0edfa9d0160c7ba">Prayer Need for Whom</label>
-        </div>
-        <div class="form-floating mb-3">
-          <select class="form-select" id="length">
-            <option selected disabled>Please Select a length</option>
-            <option value="1 - 2 Weeks">1 - 2 Weeks</option>
-            <option value="3 - 4 Weeks">3 - 4 Weeks</option>
-            <option value="Indefinite">Indefinite</option>
-            <option value="Unknown">Unknown</option>
-          </select>
-          <label for="length">Length of Request</label>
-        </div>
-        <div class="form-floating mb-3">
-          <textarea
-            class="form-control"
-            placeholder="Reason for Prayer"
-            id="field-6b96a67941ea592"
-            name="field-6b96a67941ea592"
-            style="height: 150px"
-          ></textarea>
-          <label for="field-6b96a67941ea592">Reason for Prayer</label>
-        </div>
-        <button class="btn btn-primary w-100" type="submit">Submit form</button>
-      </form>
+      </div>
     </div>
     <!-- Start Footer -->
     <div id="container" class="mb-3">
-      <footer class="pt-5">
+      <footer>
         <div class="row mx-auto bg-dark shadow text-white">
           <div class="col-lg-11 mt-2">
             <p>
