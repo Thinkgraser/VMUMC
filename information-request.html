@@ -132,111 +132,90 @@
     </div>
     <!-- End Navbar -->
 
-    <div id="container" class="px-3">
-      <div
-        class="modal modal-sheet position-static d-block p-4 py-md-5"
-        tabindex="-1"
-        role="dialog"
-        id="modalSignin"
-      >
-        <div class="modal-dialog-centered" role="document">
-          <div class="modal-content rounded-4 shadow">
-            <div class="modal-header p-5 pb-4 border-bottom-0">
-              <h1 class="fw-bold mb-0 fs-2">Information Request Form</h1>
-            </div>
-
-            <div class="modal-body p-5 pt-0">
-              <form
-                enctype="multipart/form-data"
-                method="post"
-                action="http://www.response-o-matic.com/mail.php"
-                accept-charset="UTF-8"
-              >
-                <div>
-                  <input
-                    type="hidden"
-                    name="acctid"
-                    id="acctid"
-                    value="u7p9qzi9dh3ql0yy"
-                  />
-                  <input
-                    type="hidden"
-                    name="formid"
-                    id="formid"
-                    value="799931"
-                  />
-                  <input
-                    type="hidden"
-                    name="required_vars"
-                    id="required_vars"
-                    value="name,field-4be9134b3734056,field-96b2c9af1499026,field-469dd9a5020b020"
-                  />
-                </div>
-                <div class="form-floating mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Name"
-                  />
-                  <label for="name">Name</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="field-4be9134b3734056"
-                    placeholder="Address"
-                    name="field-4be9134b3734056"
-                  />
-                  <label for="field-4be9134b3734056">Address</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="email"
-                    placeholder="Email Address"
-                    name="email"
-                  />
-                  <label for="email">Email Address</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="field-96b2c9af1499026"
-                    placeholder="Phone"
-                    name="field-96b2c9af1499026"
-                  />
-                  <label for="field-96b2c9af1499026">Phone</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <textarea
-                    class="form-control"
-                    placeholder="What would you like more information about"
-                    id="field-469dd9a5020b020"
-                    name="field-469dd9a5020b020"
-                    style="height: 150px"
-                  ></textarea>
-                  <label for="field-469dd9a5020b020"
-                    >Information You Need</label
-                  >
-                </div>
-
-                <button class="btn btn-primary w-100" type="submit">
-                  Submit form
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
+    <div id="container" class="px-3 text-center">
+      <div class="row mx-auto text-center pt-5">
+        <h2>Information Request Form</h2>
       </div>
+
+      <hr />
+      <form
+        enctype="multipart/form-data"
+        method="post"
+        action="http://www.response-o-matic.com/mail.php"
+        accept-charset="UTF-8"
+      >
+        <div>
+          <input
+            type="hidden"
+            name="acctid"
+            id="acctid"
+            value="u7p9qzi9dh3ql0yy"
+          />
+          <input type="hidden" name="formid" id="formid" value="799931" />
+          <input
+            type="hidden"
+            name="required_vars"
+            id="required_vars"
+            value="name,field-4be9134b3734056,field-96b2c9af1499026,field-469dd9a5020b020"
+          />
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Name"
+          />
+          <label for="name">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="field-4be9134b3734056"
+            placeholder="Address"
+            name="field-4be9134b3734056"
+          />
+          <label for="field-4be9134b3734056">Address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="Email Address"
+            name="email"
+          />
+          <label for="email">Email Address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="field-96b2c9af1499026"
+            placeholder="Phone"
+            name="field-96b2c9af1499026"
+          />
+          <label for="field-96b2c9af1499026">Phone</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea
+            class="form-control"
+            placeholder="What would you like more information about"
+            id="field-469dd9a5020b020"
+            name="field-469dd9a5020b020"
+            style="height: 150px"
+          ></textarea>
+          <label for="field-469dd9a5020b020">Information You Need</label>
+        </div>
+
+        <button class="btn btn-primary w-100" type="submit">Submit form</button>
+      </form>
     </div>
 
     <!-- Start Footer -->
     <div id="container" class="mb-3">
-      <footer>
+      <footer class="pt-5">
         <div class="row mx-auto bg-dark shadow text-white">
           <div class="col-lg-11 mt-2">
             <p>
