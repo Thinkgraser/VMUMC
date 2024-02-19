@@ -16,11 +16,8 @@
   border-radius: 10px;
 }
 
-div#container {
-  margin-left: auto;
-  margin-right: auto;
+.bg {
   background: #ff9;
-  width: 80%;
 }
 
 @media only screen and (hover: hover) and (pointer: fine) and (min-width: 992px) {
