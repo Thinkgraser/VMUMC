@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <!-- Required Scripts -->
+    <!-- Importing JavaScript files for navbar functionality -->
     <script src="navbar.js" defer></script>
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Importing Bootstrap library for enhanced styling and functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- End Scripts -->
+
     <!-- Required Stylesheets -->
+    <!-- Importing Bootstrap CSS for styling -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     />
+    <!-- Custom CSS for additional styling -->
     <link rel="stylesheet" href="./index.css" />
     <!-- End Stylesheets -->
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Van Meter United Methodist Church</title>
   </head>
+
+  <!-- Body starts here -->
   <body>
-    <!-- Banner -->
+    <!-- Banner section -->
     <div class="mt-sm-0 mt-md-3 mt-lg-3 container mx-auto p-0">
       <img class="w-100" src="./images/websitebanner.jpg" />
     </div>
     <!-- End Banner -->
-    <!-- Navbar -->
+
+    <!-- Navbar section -->
     <div class="container mx-auto p-0">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <!-- Navbar toggler for smaller screens -->
         <button
           class="navbar-toggler"
           type="button"
@@ -37,14 +48,18 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Navbar content -->
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <!-- Navbar links -->
           <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+            <!-- Navigation links -->
             <li class="nav-item">
               <a class="nav-link" href="/index.html"> Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/kidscare.html"> Kids Care </a>
             </li>
+            <!-- Dropdown menu for 'Our Church' section -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -56,6 +71,7 @@
               >
                 Our Church
               </a>
+              <!-- Dropdown menu items -->
               <div
                 class="dropdown-menu dropdown-menu-dark bg-dark shadow"
                 aria-labelledby="dropdown08"
@@ -78,14 +94,13 @@
                 </a>
               </div>
             </li>
-
+            <!-- Additional navigation links -->
             <li class="nav-item">
               <a class="nav-link" href="/worship.html"> Worship </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/ministries.html"> Ministries </a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="/photos.html"> Photos </a>
             </li>
@@ -95,6 +110,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/publications.html"> Publications </a>
             </li>
+            <!-- Dropdown menu for 'Contact Us' section -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -106,6 +122,7 @@
               >
                 Contact Us
               </a>
+              <!-- Dropdown menu items -->
               <div
                 class="dropdown-menu dropdown-menu-dark bg-dark shadow"
                 aria-labelledby="dropdown08"
@@ -128,32 +145,41 @@
     </div>
     <!-- End Navbar -->
 
-    <div class="px-3 mx-auto container bg">
+    <div class="container mx-auto px-3 bg">
+      <!-- Content sections -->
+      <!-- Row with padding top 5 and centered content -->
       <div class="row pt-5 mx-auto text-center">
-        <h1>The Journey with God</h1>
+        <h1>Bread Ministry</h1>
       </div>
-      <div class="row text-center pt-3 mx-auto">
-        <div class="col">
-          <p>
-            Nurturing children,<br />
-            supporting families,<br />
-            creating community<br />
-            as we share our faith.
-          </p>
-        </div>
+      <div class="row pt-3 mx-auto">
+        <hr />
       </div>
-      <div class="row text-center pt-3 mx-auto">
-        <a
-          class="btn btn-outline-secondary my-3"
-          href="https://www.umc.org/en/who-we-are/what-we-believe"
-        >
-          For a deeper discussion of our faith
-        </a>
+      <div class="row pt-3 mx-auto">
+        <p>
+          For over 20 years our congregation, in cooperation with Panera Bread
+          Company, has been participating in a Bread Ministry. Twice a week a
+          member of our congregation picks up baked goods that have been
+          packaged up at the end of their business day. These items are sorted
+          and distributed to Kids Care, individuals in our community, and the
+          Good Samaritan Food Pantry in Adel.
+        </p>
       </div>
-      <div class="row text-center pt-3 mx-auto">
-        <div class="col">
-          <img class="w-50" src="./images/churchFaith.jpg" />
-        </div>
+      <div class="row pt-3 mx-auto">
+        <p>
+          We invite you to join us in sustaining this ministry. Please consider
+          assisting with transporting packages from Panera to the church.
+          Pickups are Sunday and Monday evenings, with delivery to the church
+          the following mornings.
+          <a href="https://www.signupgenius.com/go/4090d4ba4a82ea3fd0-panara"
+            ><strong>Click here to sign up.</strong></a
+          >
+        </p>
+      </div>
+      <div class="row pt-3 mx-auto">
+        <img
+          src="./images/MinistryBreadMinistry2023.jpg"
+          alt="Generous donations from the Panera Bread Company are distributed to the Adel Food Pantry, Kids Care, seniors, and other individuals."
+        />
       </div>
     </div>
     <!-- Start Footer -->
