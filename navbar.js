@@ -1,3 +1,14 @@
+window.addEventListener("scroll", function () {
+  var bannerHeight = document.getElementById("banner").offsetHeight;
+  var navbarContainer = document.getElementById("navbar-container");
+
+  if (window.scrollY >= bannerHeight) {
+    navbarContainer.classList.add("sticky");
+  } else {
+    navbarContainer.classList.remove("sticky");
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Script loaded");
 
