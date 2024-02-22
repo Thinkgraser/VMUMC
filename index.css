@@ -24,11 +24,11 @@
   .dropdown:hover .dropdown-menu {
     display: block;
   }
-}
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Ensure the navbar appears above other content */
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the navbar appears above other content */
+  }
 }
