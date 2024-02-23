@@ -17,7 +17,7 @@
 }
 
 .bg {
-  background: #ff9;
+  background: radial-gradient(circle, #38f9d7, #6fffe9, #5bc0eb);
 }
 
 @media only screen and (hover: hover) and (pointer: fine) and (min-width: 992px) {
