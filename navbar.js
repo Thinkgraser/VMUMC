@@ -1,3 +1,5 @@
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 window.addEventListener("scroll", function () {
   var bannerHeight = document.getElementById("banner").offsetHeight;
   var navbarContainer = document.getElementById("navbar-container");
