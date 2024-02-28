@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Map of keywords and the pages a match will send them to
 var sampleData = [
-  { keywords: "Home", url: "/index.html" },
+  { keywords: "Home", url: "/" },
   { keywords: "Kids Care", url: "/kidsCare.html" },
   { keywords: "Directions", url: "/directions.html" },
   { keywords: "Community", url: "/community.html" },
