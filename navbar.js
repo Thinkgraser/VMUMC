@@ -15,7 +15,7 @@ window.addEventListener("scroll", function () {
 
 // Add active class to the list item containing the current page link
 document.addEventListener("DOMContentLoaded", function () {
-  const currentPageUrl =
+  let currentPageUrl =
     window.location.href.split(".html")[0].trim().toLowerCase() + ".html";
 
   const navbarLinks = document.querySelectorAll("li a.nav-link");
