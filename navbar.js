@@ -13,6 +13,38 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// Add active class to the list item containing the current page link
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPageUrl =
+    window.location.href.split(".html")[0].trim().toLowerCase() + ".html";
+
+  const navbarLinks = document.querySelectorAll("li a.nav-link");
+  navbarLinks.forEach((link) => {
+    const linkUrl = link.href.split(".html")[0].trim().toLowerCase() + ".html";
+    if (
+      linkUrl === currentPageUrl &&
+      !link.classList.contains("dropdown-toggle")
+    ) {
+      link.classList.add("active");
+    }
+  });
+
+  // Check dropdown menu items and set active class for dropdown items
+  const dropdownItems = document.querySelectorAll(".dropdown-item");
+  dropdownItems.forEach((item) => {
+    const itemUrl = item.href.split(".html")[0].trim().toLowerCase() + ".html";
+    if (itemUrl === currentPageUrl) {
+      item.classList.add("active");
+      const dropdownToggle = item
+        .closest(".dropdown")
+        .querySelector(".dropdown-toggle");
+      if (dropdownToggle && currentPageUrl.startsWith(itemUrl)) {
+        dropdownToggle.classList.add("active");
+      }
+    }
+  });
+});
+
 // Map of keywords and the pages a match will send them to
 var sampleData = [
   { keywords: "Home", url: "index.html" },
@@ -87,36 +119,4 @@ const autoCompleteJS = new autoComplete({
       },
     },
   },
-});
-
-// Add active class to the list item containing the current page link
-document.addEventListener("DOMContentLoaded", function () {
-  const currentPageUrl =
-    window.location.href.split(".html")[0].trim().toLowerCase() + ".html";
-
-  const navbarLinks = document.querySelectorAll("li a.nav-link");
-  navbarLinks.forEach((link) => {
-    const linkUrl = link.href.split(".html")[0].trim().toLowerCase() + ".html";
-    if (
-      linkUrl === currentPageUrl &&
-      !link.classList.contains("dropdown-toggle")
-    ) {
-      link.classList.add("active");
-    }
-  });
-
-  // Check dropdown menu items and set active class for dropdown items
-  const dropdownItems = document.querySelectorAll(".dropdown-item");
-  dropdownItems.forEach((item) => {
-    const itemUrl = item.href.split(".html")[0].trim().toLowerCase() + ".html";
-    if (itemUrl === currentPageUrl) {
-      item.classList.add("active");
-      const dropdownToggle = item
-        .closest(".dropdown")
-        .querySelector(".dropdown-toggle");
-      if (dropdownToggle && currentPageUrl.startsWith(itemUrl)) {
-        dropdownToggle.classList.add("active");
-      }
-    }
-  });
 });
