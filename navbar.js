@@ -89,18 +89,18 @@ const autoCompleteJS = new autoComplete({
   },
 });
 
-// Add active class to the list item containing the current page link
 document.addEventListener("DOMContentLoaded", function () {
-  const currentPageUrl =
-    window.location.href.split(".html")[0].trim().toLowerCase() + ".html";
-
+  // Add active class to the list item containing the current page link
+  const currentPageUrl = window.location.href;
   const navbarLinks = document.querySelectorAll("li a.nav-link");
   navbarLinks.forEach((link) => {
-    const linkUrl = link.href.split(".html")[0].trim().toLowerCase() + ".html";
     if (
-      linkUrl === currentPageUrl &&
+      (link.href === currentPageUrl ||
+        link.href + "#" === currentPageUrl ||
+        link.href + "#top" === currentPageUrl) &&
       !link.classList.contains("dropdown-toggle")
     ) {
+      console.log("Match found for link:", link.href);
       link.classList.add("active");
     }
   });
@@ -108,14 +108,22 @@ document.addEventListener("DOMContentLoaded", function () {
   // Check dropdown menu items and set active class for dropdown items
   const dropdownItems = document.querySelectorAll(".dropdown-item");
   dropdownItems.forEach((item) => {
-    const itemUrl = item.href.split(".html")[0].trim().toLowerCase() + ".html";
-    if (itemUrl === currentPageUrl) {
+    if (
+      item.href === currentPageUrl ||
+      item.href + "#" === currentPageUrl ||
+      item.href + "#top" === currentPageUrl
+    ) {
       item.classList.add("active");
+
+      // Check if the link is part of a dropdown menu
       const dropdownToggle = item
         .closest(".dropdown")
         .querySelector(".dropdown-toggle");
-      if (dropdownToggle && currentPageUrl.startsWith(itemUrl)) {
-        dropdownToggle.classList.add("active");
+      if (dropdownToggle) {
+        const dropdownMenu = dropdownToggle.nextElementSibling;
+        if (currentPageUrl.startsWith(item.href)) {
+          dropdownToggle.classList.add("active");
+        }
       }
     }
   });
