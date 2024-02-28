@@ -14,6 +14,14 @@
 
     <!-- End Stylesheets -->
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.01.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+    <!-- autocomplete end -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -156,6 +164,23 @@
         </div>
       </div>
     </nav>
+    <div class="container-fluid bg-dark pb-3">
+      <div class="row">
+        <div class="col">
+          <div class="autoComplete_wrapper">
+            <input
+              id="autoComplete"
+              type="search"
+              dir="ltr"
+              spellcheck="false"
+              autocorrect="off"
+              autocomplete="off"
+              autocapitalize="off"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- End Navbar -->
   <!-- Body content starts here -->

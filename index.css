@@ -16,6 +16,22 @@
   border-radius: 10px;
 }
 
+.autoComplete_wrapper {
+  width: 100% !important; /* Set your desired width */
+}
+
+.autoComplete_wrapper > input {
+  width: 100% !important;
+}
+
+#autoComplete_list_1 {
+  overflow: hidden !important;
+}
+
+mark {
+  padding: 0 !important;
+}
+
 .bg {
   background: radial-gradient(
     circle,
