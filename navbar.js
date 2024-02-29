@@ -64,6 +64,99 @@ var sampleData = [
   { keywords: "Prayer Request", url: "/prayer-request.html" },
   { keywords: "Building Use Request", url: "/building-request.html" },
   { keywords: "Information Request", url: "/information-request.html" },
+  {
+    keywords: ["GLOW", "God Lights Our Way"],
+    url: "/GLOW.html",
+  },
+  {
+    keywords: ["JAM", "J.A.M", "Jesus and Me"],
+    url: "/JAM.html",
+  },
+  { keywords: "Pastors Message", url: "/pastorsmessage.html" },
+  {
+    keywords: ["Pastors Message Ash Wednesday", "Ash Wednesday"],
+    url: "/pastorsmessageAshWednesday.html",
+  },
+  {
+    keywords: ["Pastors Message Lent", "Lent"],
+    url: "/pastorsmessageLent.html",
+  },
+  {
+    keywords: ["SWAG", "S.W.A.G", "Youth Group"],
+    url: "/ciayouth.html",
+  },
+  {
+    keywords: "Missions of the Month",
+    url: "/missionmoment.html",
+  },
+  {
+    keywords: "Mission Team",
+    url: "/missionmomentTeams.html",
+  },
+  {
+    keywords: "Bread Ministry",
+    url: "/MinistryBread.html",
+  },
+  {
+    keywords: ["VBS", "V.B.S", "Vacation Bible School"],
+    url: "/VBS.html",
+  },
+  {
+    keywords: "Kids Shopping Day",
+    url: "/MinistryKidsShoppingDay.html",
+  },
+  {
+    keywords: "UMC Scholarships",
+    url: "/scholarships.html",
+  },
+  {
+    keywords: "Easter Egg Hunt",
+    url: "/MinistryEasterEggHunt.html",
+  },
+  {
+    keywords: "Trunk or Treat",
+    url: "/trunkortreat.html",
+  },
+  {
+    keywords: "Alternative Christmas Giving",
+    url: "/alternativechristmasgiving.html",
+  },
+  {
+    keywords: "Chancel Choir & Praise Team",
+    url: "/choir.html",
+  },
+  {
+    keywords: "Confirmation",
+    url: "/MinistryConfirmation.html",
+  },
+  {
+    keywords: ["Bible Giving", "Bible Presentation", "3rd Grade Bible"],
+    url: "/3rdGradeBibleClass.html",
+  },
+  {
+    keywords: "Special Services",
+    url: "/specialservices.html",
+  },
+  {
+    keywords: "Children's Christmas Program",
+    url: "/MinistryChildrensChristmasProgram.html",
+  },
+  {
+    keywords: "Choir Christmas Cantata",
+    url: "/MinistryChristmasCantata.html",
+  },
+  {
+    keywords: "Easter Breakfast",
+    url: "/MinistryEasterBreakfast.html",
+  },
+  {
+    keywords: "Candlelight Service Christmas Eve",
+    url: "/MinistryChristmasEveCandlelight.html",
+  },
+  {
+    keywords: ["Shrove Tuesday Pancake Supper", "Fat Tuesday Supper"],
+    url: "/MinistryShroveTuesday.html",
+  },
   // Add more data as needed
 ];
 
@@ -100,8 +193,8 @@ const autoCompleteJS = new autoComplete({
         const selection = event.detail.selection.value;
         const selectedData = sampleData.find((item) =>
           Array.isArray(item.keywords)
-            ? item.keywords === selection
-            : item.keywords.includes(selection)
+            ? item.keywords.includes(selection)
+            : item.keywords === selection
         );
         if (selectedData) {
           window.location.href = selectedData.url;
