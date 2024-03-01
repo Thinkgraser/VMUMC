@@ -209,15 +209,15 @@ var sampleData = [
     url: "/Publications/KidsCarePrintable.pdf",
   },
   {
-    keywords: "Summer 2024 Kids Care Registration",
+    keywords: "Summer 2024 Kids Care Registration Form",
     url: "/Publications/KidsCare2024SummerRegistration%20form.pdf",
   },
   {
-    keywords: "Fall 2024 Kids Care Registration",
+    keywords: "Fall 2024 Kids Care Registration Form",
     url: "/KidsCare2024Preschool(Fall)Registration.pdf",
   },
   {
-    keywords: "Spring 2024 Kids Care Registration",
+    keywords: "Spring 2024 Kids Care Registration Form",
     url: "/Publications/KidsCare2023FallRegistrationForm.pdf",
   },
   // Add more data as needed
