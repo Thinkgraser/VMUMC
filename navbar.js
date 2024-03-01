@@ -157,6 +157,69 @@ var sampleData = [
     keywords: ["Shrove Tuesday Pancake Supper", "Fat Tuesday Supper"],
     url: "/MinistryShroveTuesday.html",
   },
+  {
+    keywords: ["The Grapevine", "Sunday News Bulletin"],
+    url: "/Publications/VMgrapevine.pdf",
+  },
+  {
+    keywords: "Newsletter",
+    url: "/Publications/churchnewsletter.pdf",
+  },
+  {
+    keywords: ["Bible Verses for the week", "Liturgy This Week"],
+    url: "/Publications/LiturgyThisWeek.pdf",
+  },
+  {
+    keywords: "Church Bulletin",
+    url: "/Publications/vmbulletin.pdf",
+  },
+  {
+    keywords: [
+      "Adel Ministerial Association (AMA) Emergency Fund",
+      "Assistance Fund",
+    ],
+    url: "/Publications/Adel_Ministerial_Assn_Emergency_Fund.pdf",
+  },
+  {
+    keywords: [
+      "Luke DeBoer Update",
+      "Missionary in Puerto Rico",
+      "DeBoer newsletter",
+    ],
+    url: "/Publications/LukeDeBoerUpdate.pdf",
+  },
+  {
+    keywords: ["Good Samaritan Food Pantry in Adel", "Missions Food Pantry"],
+    url: "/MissionsFoodPantry.pdf",
+  },
+  {
+    keywords: "Exercise Your Faith Small Group Study",
+    url: "/Publications/ExerciseYourFaith.pdf",
+  },
+  {
+    keywords: ["Greeting Cards Recycled by SAM", "VMUMC Senior Adult Ministry"],
+    url: "/Publications/SAM_card_ministry.pdf",
+  },
+  {
+    keywords: "Kids Care Parent Handbook",
+    url: "/Publications/KidsCare2024ParentHandbook.pdf",
+  },
+  {
+    keywords: "Kids Care Schedule and Fees",
+    url: "/Publications/KidsCarePrintable.pdf",
+  },
+  {
+    keywords: "Summer 2024 Kids Care Registration",
+    url: "/Publications/KidsCare2024SummerRegistration%20form.pdf",
+  },
+  {
+    keywords: "Fall 2024 Kids Care Registration",
+    url: "/KidsCare2024Preschool(Fall)Registration.pdf",
+  },
+  {
+    keywords: "Spring 2024 Kids Care Registration",
+    url: "/Publications/KidsCare2023FallRegistrationForm.pdf",
+  },
   // Add more data as needed
 ];
 
