@@ -190,7 +190,7 @@ var sampleData = [
   },
   {
     keywords: ["Good Samaritan Food Pantry in Adel", "Missions Food Pantry"],
-    url: "/MissionsFoodPantry.pdf",
+    url: "/Publications/MissionsFoodPantry.pdf",
   },
   {
     keywords: "Exercise Your Faith Small Group Study",
