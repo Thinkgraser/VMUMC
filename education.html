@@ -40,7 +40,11 @@
   <body>
     <!-- Banner -->
     <div id="banner" class="mt-sm-0 mt-md-3 mt-lg-3 container mx-auto p-0">
-      <img class="w-100" src="./images/websitebanner.jpg" />
+      <picture>
+        <source srcset="./images/websitebanner.webp" type="image/webp" />
+        <source srcset="./images/websitebanner.jpg" type="image/jpeg" />
+        <img class="w-100" src="./images/websitebanner.jpg" />
+      </picture>
     </div>
     <!-- End Banner -->
     <!-- Navbar section -->
