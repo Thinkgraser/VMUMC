@@ -1,4 +1,5 @@
 #banner {
+  background-image: url("./images/websitebanner.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
