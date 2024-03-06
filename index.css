@@ -6,6 +6,10 @@
   aspect-ratio: 47/13;
 }
 
+.vh-65 {
+  height: 65vh;
+}
+
 .dropdown-item {
   color: rgba(255, 255, 255, 0.55);
 }
