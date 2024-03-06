@@ -50,6 +50,9 @@ mark {
     #5bc0eb
   );
 }
+.bg-2 {
+  background-color: #14e6fd;
+}
 
 @media only screen and (hover: hover) and (pointer: fine) and (min-width: 992px) {
   .dropdown:hover .dropdown-menu {
