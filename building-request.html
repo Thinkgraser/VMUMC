@@ -32,20 +32,45 @@
     <!-- End Stylesheets -->
 
     <script>
+      function checkDate() {
+        var startDateInput = document.getElementById("date");
+        var startDate = new Date(startDateInput.value);
+        var endDateInput = document.getElementById("date2");
+        var endDate = new Date(endDateInput.value);
+
+        // Check if end time is not set or if it's set to a date before start time
+        if (!endDateInput.value || endDate < startDate) {
+          endDateInput.value = startDateInput.value; // Set end time to start time
+        }
+      }
+
       function formatDate() {
         // Get the date input value
-        var inputDate = document.getElementById("date").value;
-
-        // Split the date into year, month, and day
-        var parts = inputDate.split("-");
+        var startDate = new Date(document.getElementById("date").value);
+        var endDate = new Date(document.getElementById("date2").value);
 
         // Rearrange the parts to format as mm/dd/yyyy
-        var formattedDate = parts[1] + "-" + parts[2] + "-" + parts[0];
-        console.log(formattedDate);
+        var formattedDate =
+          startDate.toLocaleDateString("en-US") +
+          " at " +
+          startDate.toLocaleTimeString("en-US", {
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true,
+          }) +
+          " to " +
+          endDate.toLocaleDateString("en-US") +
+          " at " +
+          endDate.toLocaleTimeString("en-US", {
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true,
+          });
 
         // Set the formatted date back to the input
         document.getElementById("field-c5b0d72b8c09b1c").value = formattedDate;
         document.getElementById("date").disabled = true;
+        console.log(formattedDate);
       }
     </script>
   </head>
@@ -258,22 +283,34 @@
           />
           <label for="email">Email Address</label>
         </div>
-        <div class="form-floating mb-3">
-          <input
-            required
-            type="date"
-            name="date"
-            id="date"
-            size="20"
-            class="form-control"
-          />
-          <input
-            required
-            type="hidden"
-            name="field-c5b0d72b8c09b1c"
-            id="field-c5b0d72b8c09b1c"
-          />
-          <label for="date">Date Building Is Needed</label>
+        <div class="row">
+          <div class="form-floating col mb-3">
+            <input
+              required
+              type="datetime-local"
+              name="date"
+              id="date"
+              class="form-control"
+              onchange="checkDate()"
+            />
+            <label class="ms-2" for="date">Start Time Building Is Needed</label>
+            <input
+              required
+              type="hidden"
+              name="field-c5b0d72b8c09b1c"
+              id="field-c5b0d72b8c09b1c"
+            />
+          </div>
+          <div class="form-floating col mb-3">
+            <input
+              required
+              type="datetime-local"
+              name="date2"
+              id="date2"
+              class="form-control"
+            />
+            <label class="ms-2" for="date2">End Time Building Is Needed</label>
+          </div>
         </div>
         <div class="form-floating mb-3">
           <textarea
