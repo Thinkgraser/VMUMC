@@ -216,6 +216,7 @@
             class="form-control"
             id="name"
             placeholder="Name"
+            required
           />
           <label for="name">Name</label>
         </div>
@@ -226,26 +227,31 @@
             id="field-4be9134b3734056"
             placeholder="Address"
             name="field-4be9134b3734056"
+            required
           />
           <label for="field-4be9134b3734056">Address</label>
         </div>
         <div class="form-floating mb-3">
           <input
-            type="text"
+            type="email"
             class="form-control"
             id="email"
             placeholder="Email Address"
             name="email"
+            required
           />
           <label for="email">Email Address</label>
         </div>
         <div class="form-floating mb-3">
           <input
-            type="text"
+            type="tel"
             class="form-control"
             id="field-96b2c9af1499026"
             placeholder="Phone"
             name="field-96b2c9af1499026"
+            oninvalid="this.setCustomValidity('Please enter phone number as (###)###-#### or ###-###-####')"
+            oninput="(function(e){e.setCustomValidity(''); return !e.validity.valid && e.setCustomValidity(' ')})(this)"
+            required
           />
           <label for="field-96b2c9af1499026">Phone</label>
         </div>
@@ -256,6 +262,7 @@
             id="field-469dd9a5020b020"
             name="field-469dd9a5020b020"
             style="height: 150px"
+            required
           ></textarea>
           <label for="field-469dd9a5020b020">Information You Need</label>
         </div>

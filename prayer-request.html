@@ -184,7 +184,7 @@
     <!-- End Navbar -->
 
     <div class="px-3 text-center container mx-auto bg pb-5">
-      <div class="row mx-auto text-center pt-5">
+      <div class="row mx-auto pt-5">
         <h1>Prayer Request Form</h1>
       </div>
 
@@ -217,6 +217,7 @@
             id="name"
             placeholder="
           Requestor's Name"
+            required
           />
           <label for="name"> Requestor's Name</label>
         </div>
@@ -227,12 +228,19 @@
             id="field-0edfa9d0160c7ba"
             placeholder="Prayer Need for Whom"
             name="field-0edfa9d0160c7ba"
+            required
           />
           <label for="field-0edfa9d0160c7ba">Prayer Need for Whom</label>
         </div>
         <div class="form-floating mb-3">
-          <select class="form-select" id="length">
-            <option selected disabled>Please Select a length</option>
+          <select
+            class="form-select"
+            id="length"
+            required
+            oninvalid="this.setCustomValidity('Please fill out this field')"
+            oninput="(function(e){e.setCustomValidity(''); return !e.validity.valid && e.setCustomValidity(' ')})(this)"
+          >
+            <option selected disabled value="">Please Select a length</option>
             <option value="1 - 2 Weeks">1 - 2 Weeks</option>
             <option value="3 - 4 Weeks">3 - 4 Weeks</option>
             <option value="Indefinite">Indefinite</option>
@@ -247,6 +255,7 @@
             id="field-6b96a67941ea592"
             name="field-6b96a67941ea592"
             style="height: 150px"
+            required
           ></textarea>
           <label for="field-6b96a67941ea592">Reason for Prayer</label>
         </div>

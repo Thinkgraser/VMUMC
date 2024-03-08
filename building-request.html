@@ -33,6 +33,9 @@
 
     <script>
       function checkDate() {
+        if (!valthis()) {
+          return false;
+        }
         var startDateInput = document.getElementById("date");
         var startDate = new Date(startDateInput.value);
         var endDateInput = document.getElementById("date2");
@@ -66,11 +69,28 @@
             minute: "2-digit",
             hour12: true,
           });
-
         // Set the formatted date back to the input
         document.getElementById("field-c5b0d72b8c09b1c").value = formattedDate;
         document.getElementById("date").disabled = true;
+        document.getElementById("date2").disabled = true;
         console.log(formattedDate);
+        return true;
+      }
+
+      function valthis() {
+        var checkBoxes = document.getElementsByClassName("form-check-input");
+        var isChecked = false;
+        for (var i = 0; i < checkBoxes.length; i++) {
+          if (checkBoxes[i].checked) {
+            isChecked = true;
+          }
+        }
+        if (isChecked) {
+          return true;
+        } else {
+          alert("Please select at least 1 room that will be needed!");
+          return false;
+        }
       }
     </script>
   </head>
@@ -237,7 +257,7 @@
         method="post"
         action="http://www.response-o-matic.com/mail.php"
         accept-charset="UTF-8"
-        onsubmit="formatDate()"
+        onsubmit="return formatDate(event)"
       >
         <div>
           <input
@@ -266,26 +286,32 @@
             class="form-control"
             id="name"
             placeholder="Name"
+            required
           />
           <label for="name">Name</label>
         </div>
         <div class="form-floating mb-3">
           <input
-            type="text"
+            type="tel"
             class="form-control"
             id="field-792704759794cbb"
             placeholder="Phone Number"
             name="field-792704759794cbb"
+            pattern="^\(\d{3}\)\d{3}-\d{4}$|^\d{3}-\d{3}-\d{4}$"
+            oninvalid="this.setCustomValidity('Please enter phone number as (###)###-#### or ###-###-####')"
+            oninput="(function(e){e.setCustomValidity(''); return !e.validity.valid && e.setCustomValidity(' ')})(this)"
+            required
           />
           <label for="field-792704759794cbb">Phone Number</label>
         </div>
         <div class="form-floating mb-3">
           <input
-            type="text"
+            type="email"
             class="form-control"
             id="email"
             placeholder="Email Address"
             name="email"
+            required
           />
           <label for="email">Email Address</label>
         </div>
@@ -319,6 +345,7 @@
             id="field-c771266992e254f"
             name="field-c771266992e254f"
             style="height: 150px"
+            required
           ></textarea>
           <label for="field-c771266992e254f">Reason For Use</label>
         </div>
