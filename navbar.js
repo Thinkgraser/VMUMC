@@ -226,7 +226,6 @@ var sampleData = [
 // Website Search Functionality
 const autoCompleteJS = new autoComplete({
   selector: "#autoComplete",
-  placeHolder: "Search",
   data: {
     src: sampleData.map((item) => item.keywords).flat(), // Use values from sampleData
     cache: true,
