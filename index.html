@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Preloading images for faster loading -->
     <link
       rel="preload"
       href="./images/websitebanner.webp"
@@ -13,9 +14,11 @@
       as="image"
       fetchpriority="high"
     />
+    <!-- Linking required Javascript files -->
     <script src="navbar.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+    <!-- Linking required CSS files -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -26,6 +29,7 @@
     />
     <link rel="stylesheet" href="./index.css" />
 
+    <!-- Setting metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -41,15 +45,21 @@
       name="description"
       content="The Van Meter United Methodist Church site provides users with dates, times and details for the worship and fellowship of the congregation."
     />
+    <!-- Setting icon -->
     <link rel="icon" href="./images/umc-logo.png" />
   </head>
+  <!-- Banner section -->
   <div id="banner" class="mt-sm-3 container mx-auto p-0 rounded-sm-top">
     <picture>
+      <!-- Using WebP format for modern browsers -->
       <source srcset="./images/websitebanner.webp" type="image/webp" />
+      <!-- Fallback to JPEG format for compatibility -->
       <source srcset="./images/websitebanner.jpg" type="image/jpeg" />
-      <img class="w-100 rounded-sm-top" />
+      <!-- Image tag with class for styling -->
+      <img class="w-100 rounded-sm-top" alt="VMUMC Banner" />
     </picture>
   </div>
+  <!-- Navbar section -->
   <div id="navbar-container" class="container mx-auto p-0">
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-dark"
@@ -74,12 +84,15 @@
 
         <div class="collapse navbar-collapse" id="navbarsExample05">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Navigation link -->
             <li class="nav-item">
               <a class="nav-link" href="/">Home</a>
             </li>
+            <!-- Navigation link -->
             <li class="nav-item">
               <a class="nav-link" href="/kidscare.html"> Kids Care </a>
             </li>
+            <!-- Dropdown menu -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -119,21 +132,27 @@
                 </li>
               </ul>
             </li>
+            <!-- Navigation link -->
             <li class="nav-item">
               <a class="nav-link" href="/worship.html"> Worship </a>
             </li>
+            <!-- Navigation link -->
             <li class="nav-item">
               <a class="nav-link" href="/ministries.html"> Ministries </a>
             </li>
+            <!-- Navigation link -->
             <li class="nav-item">
               <a class="nav-link" href="/photos.html"> Photos </a>
             </li>
+            <!-- Navigation link -->
             <li class="nav-item">
               <a class="nav-link" href="/calendar.html"> Calendar </a>
             </li>
+            <!-- Navigation link -->
             <li class="nav-item">
               <a class="nav-link" href="/publications.html"> Publications </a>
             </li>
+            <!-- Dropdown menu -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"

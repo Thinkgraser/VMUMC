@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Preloading images for faster loading -->
     <link
       rel="preload"
       href="./images/websitebanner.webp"
@@ -13,6 +14,7 @@
       as="image"
       fetchpriority="high"
     />
+    <!-- Setting metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Building Use Request Form - Van Meter United Methodist Church</title>
@@ -24,13 +26,16 @@
       name="description"
       content="The Van Meter United Methodist Church site provides users with dates, times and details for the worship and fellowship of the congregation."
     />
+    <!-- Setting icon -->
     <link rel="icon" href="./images/umc-logo.png" />
     <!-- Required Scripts -->
+    <!-- Linking required Javascript files -->
     <script src="navbar.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
     <!-- End Scripts -->
     <!-- Required Stylesheets -->
+    <!-- Linking required CSS files -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -108,14 +113,19 @@
   </head>
   <body>
     <!-- Banner -->
+    <!-- Banner section -->
     <div id="banner" class="mt-sm-3 container mx-auto p-0 rounded-sm-top">
       <picture>
+        <!-- Using WebP format for modern browsers -->
         <source srcset="./images/websitebanner.webp" type="image/webp" />
+        <!-- Fallback to JPEG format for compatibility -->
         <source srcset="./images/websitebanner.jpg" type="image/jpeg" />
-        <img class="w-100 rounded-sm-top" src="./images/websitebanner.jpg" />
+        <!-- Image tag with class for styling -->
+        <img class="w-100 rounded-sm-top" alt="VMUMC Banner" />
       </picture>
     </div>
     <!-- End Banner -->
+    <!-- Navbar section -->
     <!-- Navbar section -->
     <div id="navbar-container" class="container mx-auto p-0">
       <nav
@@ -141,12 +151,15 @@
 
           <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Navigation link -->
               <li class="nav-item">
                 <a class="nav-link" href="/">Home</a>
               </li>
+              <!-- Navigation link -->
               <li class="nav-item">
                 <a class="nav-link" href="/kidscare.html"> Kids Care </a>
               </li>
+              <!-- Dropdown menu -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -156,31 +169,37 @@
                   >Our Church</a
                 >
                 <ul class="dropdown-menu dropdown-menu-dark bg-dark shadow">
+                  <!-- Dropdown item -->
                   <li>
                     <a class="dropdown-item" href="/directions.html">
                       Church Directions
                     </a>
                   </li>
+                  <!-- Dropdown item -->
                   <li>
                     <a class="dropdown-item" href="/community.html">
                       Church Community
                     </a>
                   </li>
+                  <!-- Dropdown item -->
                   <li>
                     <a class="dropdown-item" href="/services.html">
                       Church Services
                     </a>
                   </li>
+                  <!-- Dropdown item -->
                   <li>
                     <a class="dropdown-item" href="/education.html">
                       Christian Education
                     </a>
                   </li>
+                  <!-- Dropdown item -->
                   <li>
                     <a class="dropdown-item" href="/staff.html">
                       Church Staff
                     </a>
                   </li>
+                  <!-- Dropdown item -->
                   <li>
                     <a class="dropdown-item" href="/beliefs.html">
                       Church Beliefs
@@ -188,21 +207,27 @@
                   </li>
                 </ul>
               </li>
+              <!-- Navigation link -->
               <li class="nav-item">
                 <a class="nav-link" href="/worship.html"> Worship </a>
               </li>
+              <!-- Navigation link -->
               <li class="nav-item">
                 <a class="nav-link" href="/ministries.html"> Ministries </a>
               </li>
+              <!-- Navigation link -->
               <li class="nav-item">
                 <a class="nav-link" href="/photos.html"> Photos </a>
               </li>
+              <!-- Navigation link -->
               <li class="nav-item">
                 <a class="nav-link" href="/calendar.html"> Calendar </a>
               </li>
+              <!-- Navigation link -->
               <li class="nav-item">
                 <a class="nav-link" href="/publications.html"> Publications </a>
               </li>
+              <!-- Dropdown menu -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -212,21 +237,25 @@
                   >Contact Us</a
                 >
                 <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                  <!-- Dropdown item -->
                   <li>
                     <a class="dropdown-item" href="/contact.html">
                       Contact Info
                     </a>
                   </li>
+                  <!-- Dropdown item -->
                   <li>
                     <a class="dropdown-item" href="/prayer-request.html">
                       Prayer Request
                     </a>
                   </li>
+                  <!-- Dropdown item -->
                   <li>
                     <a class="dropdown-item" href="/building-request.html">
                       Building Use Request
                     </a>
                   </li>
+                  <!-- Dropdown item -->
                   <li>
                     <a class="dropdown-item" href="/information-request.html">
                       Information Request
@@ -238,6 +267,7 @@
           </div>
         </div>
       </nav>
+      <!-- Search bar -->
       <div class="container-fluid bg-dark pb-3">
         <div class="row">
           <div class="col">
