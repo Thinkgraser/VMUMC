@@ -60,9 +60,6 @@ mark {
     #5bc0eb
   );
 }
-.bg-2 {
-  background-color: #14e6fd;
-}
 
 /* Makes navbar stick to top of screen for large non mobile devices */
 @media only screen and (hover: hover) and (pointer: fine) and (min-width: 992px) {
