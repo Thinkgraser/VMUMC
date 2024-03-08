@@ -63,7 +63,7 @@ mark {
 .bg-2 {
   background-color: #14e6fd;
 }
-
+/* Makes navbar stick to top of screen for large non mobile devices */
 @media only screen and (hover: hover) and (pointer: fine) and (min-width: 992px) {
   .dropdown:hover .dropdown-menu {
     display: block;
@@ -83,6 +83,14 @@ mark {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .rounded-md-top {
+    border-top-left-radius: var(--bs-border-radius);
+    border-top-right-radius: var(--bs-border-radius);
+  }
+  .rounded-md-bottom {
+    border-bottom-left-radius: var(--bs-border-radius);
+    border-bottom-right-radius: var(--bs-border-radius);
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
