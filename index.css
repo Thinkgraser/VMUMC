@@ -63,6 +63,7 @@ mark {
 .bg-2 {
   background-color: #14e6fd;
 }
+
 /* Makes navbar stick to top of screen for large non mobile devices */
 @media only screen and (hover: hover) and (pointer: fine) and (min-width: 992px) {
   .dropdown:hover .dropdown-menu {
@@ -77,6 +78,12 @@ mark {
   }
 }
 
+@media (max-width: 575.99px) {
+  .full-page {
+    min-height: calc(100vh - 112px - 255px);
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .rounded-sm-top {
@@ -87,10 +94,16 @@ mark {
     border-bottom-left-radius: var(--bs-border-radius);
     border-bottom-right-radius: var(--bs-border-radius);
   }
+  .full-page {
+    min-height: calc(100vh - 112px - 231px - 2rem);
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .full-page {
+    min-height: calc(100vh - 112px - 183px - 2rem);
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -106,6 +119,9 @@ mark {
   }
   .w-lg-100 {
     width: 100% !important;
+  }
+  .full-page {
+    min-height: calc(100vh - 112px - 76px - 2rem);
   }
 }
 
