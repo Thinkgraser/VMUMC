@@ -79,18 +79,18 @@ mark {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .rounded-sm-top {
+    border-top-left-radius: var(--bs-border-radius);
+    border-top-right-radius: var(--bs-border-radius);
+  }
+  .rounded-sm-bottom {
+    border-bottom-left-radius: var(--bs-border-radius);
+    border-bottom-right-radius: var(--bs-border-radius);
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .rounded-md-top {
-    border-top-left-radius: var(--bs-border-radius);
-    border-top-right-radius: var(--bs-border-radius);
-  }
-  .rounded-md-bottom {
-    border-bottom-left-radius: var(--bs-border-radius);
-    border-bottom-right-radius: var(--bs-border-radius);
-  }
 }
 
 /* Large devices (desktops, 992px and up) */
