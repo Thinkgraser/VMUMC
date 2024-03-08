@@ -2,7 +2,7 @@
 
 #banner {
   background-image: url("./images/websitebanner.jpg");
-  background-color: var(--bs-white);
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
   aspect-ratio: 47/13;
@@ -17,10 +17,10 @@ a:hover {
 }
 
 .dropdown-item {
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--bs-nav-link-color);
 }
 .dropdown-item:hover {
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--bs-nav-link-hover-color);
   background-color: transparent;
 }
 
