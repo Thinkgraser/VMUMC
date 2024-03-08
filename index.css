@@ -80,7 +80,7 @@ mark {
 
 @media (max-width: 575.99px) {
   .full-page {
-    min-height: calc(100vh - 112px - 255px - 50px);
+    min-height: calc(100vh - 112px - 255px);
   }
 }
 
