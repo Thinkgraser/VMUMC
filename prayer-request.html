@@ -237,16 +237,17 @@
         <!-- Length Field -->
         <div class="form-floating mb-3">
           <select
+            name="field-e3e48ab5d3b6e30[]"
             class="form-select"
             id="length"
             required
             oninvalid="this.setCustomValidity('Please fill out this field')"
             oninput="(function(e){e.setCustomValidity(''); return !e.validity.valid && e.setCustomValidity(' ')})(this)">
             <option selected disabled value="">Please Select a length</option>
-            <option value="1 - 2 Weeks">1 - 2 Weeks</option>
-            <option value="3 - 4 Weeks">3 - 4 Weeks</option>
-            <option value="Indefinite">Indefinite</option>
-            <option value="Unknown">Unknown</option>
+            <option id="field-e3e48ab5d3b6e30_0" value="1 - 2 Weeks">1 - 2 Weeks</option>
+            <option id="field-e3e48ab5d3b6e30_1" value="3 - 4 Weeks">3 - 4 Weeks</option>
+            <option id="field-e3e48ab5d3b6e30_2" value="Indefinite">Indefinite</option>
+            <option id="field-e3e48ab5d3b6e30_3" value="Unknown">Unknown</option>
           </select>
           <label for="length">Length of Request</label>
         </div>
