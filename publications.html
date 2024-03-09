@@ -2,30 +2,16 @@
 <html lang="en">
   <head>
     <!-- Preloading images for faster loading -->
-    <link
-      rel="preload"
-      href="./images/websitebanner.webp"
-      as="image"
-      fetchpriority="high"
-    />
-    <link
-      rel="preload"
-      href="./images/websitebanner.jpg"
-      as="image"
-      fetchpriority="high"
-    />
+    <link rel="preload" href="./images/websitebanner.webp" as="image" fetchpriority="high" />
+    <link rel="preload" href="./images/websitebanner.jpg" as="image" fetchpriority="high" />
     <!-- Setting metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Publications - Van Meter United Methodist Church</title>
-    <meta
-      name="keywords"
-      content="Van Meter United Methodist Church, Van Meter, VMUMC"
-    />
+    <meta name="keywords" content="Van Meter United Methodist Church, Van Meter, VMUMC" />
     <meta
       name="description"
-      content="The Van Meter United Methodist Church site provides users with dates, times and details for the worship and fellowship of the congregation."
-    />
+      content="The Van Meter United Methodist Church site provides users with dates, times and details for the worship and fellowship of the congregation." />
     <!-- Setting icon -->
     <link rel="icon" href="./images/umc-logo.png" />
 
@@ -37,12 +23,10 @@
     <!-- Linking required CSS files -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.01.min.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.01.min.css" />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
@@ -60,15 +44,11 @@
 
     <!-- Navbar section -->
     <div id="navbar-container" class="container mx-auto p-0">
-      <nav
-        class="navbar navbar-expand-lg navbar-dark bg-dark"
-        aria-label="Fifth navbar example"
-      >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
         <div class="container-fluid">
           <!-- Brand -->
           <a class="navbar-brand" href="#"
-            ><img height="24" width="24" src="./images/white+umc+logo.png" />
-            VMUMC</a
+            ><img height="24" width="24" src="./images/white+umc+logo.png" /> VMUMC</a
           >
           <button
             class="navbar-toggler"
@@ -77,8 +57,7 @@
             data-bs-target="#navbarsExample05"
             aria-controls="navbarsExample05"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -104,39 +83,27 @@
                 <ul class="dropdown-menu dropdown-menu-dark bg-dark shadow">
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/directions.html">
-                      Church Directions
-                    </a>
+                    <a class="dropdown-item" href="/directions.html"> Church Directions </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/community.html">
-                      Church Community
-                    </a>
+                    <a class="dropdown-item" href="/community.html"> Church Community </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/services.html">
-                      Church Services
-                    </a>
+                    <a class="dropdown-item" href="/services.html"> Church Services </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/education.html">
-                      Christian Education
-                    </a>
+                    <a class="dropdown-item" href="/education.html"> Christian Education </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/staff.html">
-                      Church Staff
-                    </a>
+                    <a class="dropdown-item" href="/staff.html"> Church Staff </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/beliefs.html">
-                      Church Beliefs
-                    </a>
+                    <a class="dropdown-item" href="/beliefs.html"> Church Beliefs </a>
                   </li>
                 </ul>
               </li>
@@ -172,15 +139,11 @@
                 <ul class="dropdown-menu dropdown-menu-dark bg-dark">
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/contact.html">
-                      Contact Info
-                    </a>
+                    <a class="dropdown-item" href="/contact.html"> Contact Info </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/prayer-request.html">
-                      Prayer Request
-                    </a>
+                    <a class="dropdown-item" href="/prayer-request.html"> Prayer Request </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
@@ -213,8 +176,7 @@
                 autocorrect="off"
                 autocomplete="off"
                 autocapitalize="off"
-                placeholder="Search"
-              />
+                placeholder="Search" />
             </div>
           </div>
         </div>
@@ -222,20 +184,28 @@
     </div>
     <!-- Main content section -->
     <div class="px-3 container mx-auto bg pb-5">
+      <!-- Header -->
       <div class="row mx-auto text-center pt-5">
-        <h1>Church Publications</h1>
-        <hr />
+        <div class="col">
+          <h1>Church Publications</h1>
+        </div>
       </div>
+      <!-- Divider -->
+      <div class="row mx-auto">
+        <div class="col">
+          <hr />
+        </div>
+      </div>
+      <!-- Publications Section -->
       <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto justify-content-center"
-      >
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto justify-content-center pt-3">
+        <!-- Bulletin  -->
         <div class="col">
           <div class="card shadow-sm bg-dark text-white">
             <img
               class="card-img-top w-100"
               src="./images/vanmeterbulletinimage.jpg"
-              alt="Van Meter Church Bulletin"
-            />
+              alt="Van Meter Church Bulletin" />
             <div class="card-body">
               <p class="card-text">Van Meter Church Bulletin</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -243,8 +213,7 @@
                   <a
                     type="button"
                     class="btn btn-sm btn-outline-secondary"
-                    href="/Publications/vmbulletin.pdf"
-                  >
+                    href="/Publications/vmbulletin.pdf">
                     View
                   </a>
                 </div>
@@ -252,14 +221,13 @@
             </div>
           </div>
         </div>
-
+        <!-- Bible Verses -->
         <div class="col">
           <div class="card shadow-sm bg-dark text-white">
             <img
               class="card-img-top w-100"
               src="./images/BibleVerses.jpg"
-              alt="BibleVerses for the Week"
-            />
+              alt="BibleVerses for the Week" />
             <div class="card-body">
               <p class="card-text">Bible Verses for the week</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -267,8 +235,7 @@
                   <a
                     type="button"
                     class="btn btn-sm btn-outline-secondary"
-                    href="/Publications/LiturgyThisWeek.pdf"
-                  >
+                    href="/Publications/LiturgyThisWeek.pdf">
                     View
                   </a>
                 </div>
@@ -276,14 +243,13 @@
             </div>
           </div>
         </div>
-
+        <!-- Newsletter -->
         <div class="col">
           <div class="card shadow-sm bg-dark text-white">
             <img
               class="card-img-top w-100"
               src="./images/newsletterimage.jpg"
-              alt="The Van Meter UMC Newsletter"
-            />
+              alt="The Van Meter UMC Newsletter" />
             <div class="card-body">
               <p class="card-text">The Van Meter Newsletter</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -291,8 +257,7 @@
                   <a
                     type="button"
                     class="btn btn-sm btn-outline-secondary"
-                    href="/Publications/churchnewsletter.pdf"
-                  >
+                    href="/Publications/churchnewsletter.pdf">
                     View
                   </a>
                 </div>
@@ -300,14 +265,13 @@
             </div>
           </div>
         </div>
-
+        <!-- Grapevine -->
         <div class="col">
           <div class="card shadow-sm bg-dark text-white">
             <img
               class="card-img-top w-100"
               src="./images/GrapevineIcon.jpg"
-              alt="Grapevine tells weekly news"
-            />
+              alt="Grapevine tells weekly news" />
             <div class="card-body">
               <p class="card-text">Our Sunday news bulletin</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -315,8 +279,7 @@
                   <a
                     type="button"
                     class="btn btn-sm btn-outline-secondary"
-                    href="/Publications/VMgrapevine.pdf"
-                  >
+                    href="/Publications/VMgrapevine.pdf">
                     View
                   </a>
                 </div>
@@ -324,14 +287,13 @@
             </div>
           </div>
         </div>
-
+        <!-- Daily Devotions -->
         <div class="col">
           <div class="card shadow-sm bg-dark text-white">
             <img
               class="card-img-top w-100"
               src="./images/devotionUpperRoom.jpg"
-              alt="Upper Room Daily Devotional Guide"
-            />
+              alt="Upper Room Daily Devotional Guide" />
             <div class="card-body">
               <p class="card-text">Daily Devotions: The Upper Room</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -339,8 +301,7 @@
                   <a
                     type="button"
                     class="btn btn-sm btn-outline-secondary"
-                    href="https://www.upperroom.org/devotionals"
-                  >
+                    href="https://www.upperroom.org/devotionals">
                     View
                   </a>
                 </div>
@@ -348,14 +309,13 @@
             </div>
           </div>
         </div>
-
+        <!-- Devotionals 365 -->
         <div class="col">
           <div class="card shadow-sm bg-dark text-white">
             <img
               class="card-img-top w-100"
               src="./images/devotion365.jpg"
-              alt="Devotionals 365 days a year:  pause, listen, think, pray, go"
-            />
+              alt="Devotionals 365 days a year:  pause, listen, think, pray, go" />
             <div class="card-body">
               <p class="card-text">d365: Devotionals 365 days a year</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -363,8 +323,7 @@
                   <a
                     type="button"
                     class="btn btn-sm btn-outline-secondary"
-                    href="https://d365.org/"
-                  >
+                    href="https://d365.org/">
                     View
                   </a>
                 </div>
@@ -372,13 +331,13 @@
             </div>
           </div>
         </div>
+        <!-- Online Study Bible -->
         <div class="col-12 col-md-6">
           <div class="card shadow-sm bg-dark text-white">
             <img
               class="card-img-top w-100"
               src="http://media.salemwebnetwork.com/biblestudytools3/theme/default//master-banner-logo.png"
-              alt="Online Bible and Study Tools"
-            />
+              alt="Online Bible and Study Tools" />
             <div class="card-body">
               <p class="card-text">Online Bible and Study Tools</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -386,8 +345,7 @@
                   <a
                     type="button"
                     class="btn btn-sm btn-outline-secondary"
-                    href="http://www.biblestudytools.com/"
-                  >
+                    href="http://www.biblestudytools.com/">
                     View
                   </a>
                 </div>
@@ -401,20 +359,13 @@
     <footer class="mb-sm-3 container mx-auto p-0">
       <div class="row mx-auto bg-dark shadow text-white rounded-sm-bottom">
         <!-- UMC Logo -->
-        <div
-          class="col-lg-1 col-md-2 col-sm-12 mt-2 mb-2 align-self-center text-center"
-        >
-          <a href="#"
-            ><img height="60" width="60" src="./images/white+umc+logo.png"
-          /></a>
+        <div class="col-lg-1 col-md-2 col-sm-12 mt-2 mb-2 align-self-center text-center">
+          <a href="#"><img height="60" width="60" src="./images/white+umc+logo.png" /></a>
         </div>
         <!-- Copyright Info -->
-        <div
-          class="col-lg-8 col-md-10 col-sm-12 mt-2 align-self-center text-center text-md-start"
-        >
+        <div class="col-lg-8 col-md-10 col-sm-12 mt-2 align-self-center text-center text-md-start">
           <p>
-            &copy; <span id="year"></span> - Van Meter United Methodist Church.
-            All rights reserved.
+            &copy; <span id="year"></span> - Van Meter United Methodist Church. All rights reserved.
           </p>
         </div>
         <!-- Social Media Text -->
@@ -422,9 +373,7 @@
           <p>Stay Connected</p>
         </div>
         <!-- Social Media Image -->
-        <div
-          class="col-lg-1 mt-2 ps-lg-0 mb-3 text-center text-lg-start align-self-center"
-        >
+        <div class="col-lg-1 mt-2 ps-lg-0 mb-3 text-center text-lg-start align-self-center">
           <a href="https://www.facebook.com/profile.php?id=100064317144537"
             ><img height="35" width="35" src="./images/facebook.png"
           /></a>

@@ -2,30 +2,16 @@
 <html lang="en">
   <head>
     <!-- Preloading images for faster loading -->
-    <link
-      rel="preload"
-      href="./images/websitebanner.webp"
-      as="image"
-      fetchpriority="high"
-    />
-    <link
-      rel="preload"
-      href="./images/websitebanner.jpg"
-      as="image"
-      fetchpriority="high"
-    />
+    <link rel="preload" href="./images/websitebanner.webp" as="image" fetchpriority="high" />
+    <link rel="preload" href="./images/websitebanner.jpg" as="image" fetchpriority="high" />
     <!-- Setting metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Building Use Request Form - Van Meter United Methodist Church</title>
-    <meta
-      name="keywords"
-      content="Van Meter United Methodist Church, Van Meter, VMUMC"
-    />
+    <meta name="keywords" content="Van Meter United Methodist Church, Van Meter, VMUMC" />
     <meta
       name="description"
-      content="The Van Meter United Methodist Church site provides users with dates, times and details for the worship and fellowship of the congregation."
-    />
+      content="The Van Meter United Methodist Church site provides users with dates, times and details for the worship and fellowship of the congregation." />
     <!-- Setting icon -->
     <link rel="icon" href="./images/umc-logo.png" />
 
@@ -37,19 +23,15 @@
     <!-- Linking required CSS files -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.01.min.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.01.min.css" />
     <link rel="stylesheet" href="./index.css" />
 
     <script>
+      // Sets end date to selected start date if empty or before start date
       function checkDate() {
-        if (!valthis()) {
-          return false;
-        }
         var startDateInput = document.getElementById("date");
         var startDate = new Date(startDateInput.value);
         var endDateInput = document.getElementById("date2");
@@ -62,11 +44,15 @@
       }
 
       function formatDate() {
+        // Checks if at least 1 checkbox is checked and cancels submission if not
+        if (!CheckForCheckedCheckbox()) {
+          return false;
+        }
         // Get the date input value
         var startDate = new Date(document.getElementById("date").value);
         var endDate = new Date(document.getElementById("date2").value);
 
-        // Rearrange the parts to format as mm/dd/yyyy
+        // Formats the date inputs
         var formattedDate =
           startDate.toLocaleDateString("en-US") +
           " at " +
@@ -83,15 +69,16 @@
             minute: "2-digit",
             hour12: true,
           });
-        // Set the formatted date back to the input
+        // Set the formatted date to the input
         document.getElementById("field-c5b0d72b8c09b1c").value = formattedDate;
+        // Disable Date Fields So Not Included In Submission
         document.getElementById("date").disabled = true;
         document.getElementById("date2").disabled = true;
         console.log(formattedDate);
         return true;
       }
-
-      function valthis() {
+      // Checks if at least one checkbox is checked
+      function CheckForCheckedCheckbox() {
         var checkBoxes = document.getElementsByClassName("form-check-input");
         var isChecked = false;
         for (var i = 0; i < checkBoxes.length; i++) {
@@ -123,15 +110,11 @@
 
     <!-- Navbar section -->
     <div id="navbar-container" class="container mx-auto p-0">
-      <nav
-        class="navbar navbar-expand-lg navbar-dark bg-dark"
-        aria-label="Fifth navbar example"
-      >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
         <div class="container-fluid">
           <!-- Brand -->
           <a class="navbar-brand" href="#"
-            ><img height="24" width="24" src="./images/white+umc+logo.png" />
-            VMUMC</a
+            ><img height="24" width="24" src="./images/white+umc+logo.png" /> VMUMC</a
           >
           <button
             class="navbar-toggler"
@@ -140,8 +123,7 @@
             data-bs-target="#navbarsExample05"
             aria-controls="navbarsExample05"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -167,39 +149,27 @@
                 <ul class="dropdown-menu dropdown-menu-dark bg-dark shadow">
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/directions.html">
-                      Church Directions
-                    </a>
+                    <a class="dropdown-item" href="/directions.html"> Church Directions </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/community.html">
-                      Church Community
-                    </a>
+                    <a class="dropdown-item" href="/community.html"> Church Community </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/services.html">
-                      Church Services
-                    </a>
+                    <a class="dropdown-item" href="/services.html"> Church Services </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/education.html">
-                      Christian Education
-                    </a>
+                    <a class="dropdown-item" href="/education.html"> Christian Education </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/staff.html">
-                      Church Staff
-                    </a>
+                    <a class="dropdown-item" href="/staff.html"> Church Staff </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/beliefs.html">
-                      Church Beliefs
-                    </a>
+                    <a class="dropdown-item" href="/beliefs.html"> Church Beliefs </a>
                   </li>
                 </ul>
               </li>
@@ -235,15 +205,11 @@
                 <ul class="dropdown-menu dropdown-menu-dark bg-dark">
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/contact.html">
-                      Contact Info
-                    </a>
+                    <a class="dropdown-item" href="/contact.html"> Contact Info </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
-                    <a class="dropdown-item" href="/prayer-request.html">
-                      Prayer Request
-                    </a>
+                    <a class="dropdown-item" href="/prayer-request.html"> Prayer Request </a>
                   </li>
                   <!-- Dropdown item -->
                   <li>
@@ -276,8 +242,7 @@
                 autocorrect="off"
                 autocomplete="off"
                 autocapitalize="off"
-                placeholder="Search"
-              />
+                placeholder="Search" />
             </div>
           </div>
         </div>
@@ -285,49 +250,43 @@
     </div>
     <!-- Main content section -->
     <div class="px-3 container mx-auto bg pb-5">
+      <!-- Header -->
       <div class="row mx-auto pt-5">
-        <h1 class="text-center">Building Use Request Form</h1>
+        <div class="col">
+          <h1 class="text-center">Building Use Request Form</h1>
+        </div>
       </div>
-
-      <hr />
+      <!-- Divider -->
+      <div class="row pb-3 mx-auto">
+        <div class="col">
+          <hr />
+        </div>
+      </div>
+      <!-- Form -->
       <form
         enctype="multipart/form-data"
         method="post"
         action="http://www.response-o-matic.com/mail.php"
         accept-charset="UTF-8"
-        onsubmit="return formatDate(event)"
-      >
+        onsubmit="return formatDate(event)">
+        <!-- Hidden Inputs -->
         <div>
-          <input
-            type="hidden"
-            name="acctid"
-            id="acctid"
-            value="u7p9qzi9dh3ql0yy"
-          />
+          <input type="hidden" name="acctid" id="acctid" value="u7p9qzi9dh3ql0yy" />
           <input type="hidden" name="formid" id="formid" value="786297" />
           <input
             type="hidden"
             name="required_vars"
             id="required_vars"
-            value="name,field-792704759794cbb,field-c5b0d72b8c09b1c,field-c771266992e254f,field-038e996398a85f1"
-          />
-          <input
-            required
-            type="hidden"
-            name="field-c5b0d72b8c09b1c"
-            id="field-c5b0d72b8c09b1c"
-          />
+            value="name,field-792704759794cbb,field-c5b0d72b8c09b1c,field-c771266992e254f,field-038e996398a85f1" />
+          <!-- Formatted Date Field -->
+          <input required type="hidden" name="field-c5b0d72b8c09b1c" id="field-c5b0d72b8c09b1c" />
         </div>
+        <!-- Name Field -->
         <div class="form-floating mb-3">
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            placeholder="Name"
-            required
-          />
+          <input type="text" class="form-control" id="name" placeholder="Name" required />
           <label for="name">Name</label>
         </div>
+        <!-- Phone Number Field -->
         <div class="form-floating mb-3">
           <input
             type="tel"
@@ -338,10 +297,10 @@
             pattern="^\(\d{3}\)\d{3}-\d{4}$|^\d{3}-\d{3}-\d{4}$"
             oninvalid="this.setCustomValidity('Please enter phone number as (###)###-#### or ###-###-####')"
             oninput="(function(e){e.setCustomValidity(''); return !e.validity.valid && e.setCustomValidity(' ')})(this)"
-            required
-          />
+            required />
           <label for="field-792704759794cbb">Phone Number</label>
         </div>
+        <!-- Email Field -->
         <div class="form-floating mb-3">
           <input
             type="email"
@@ -349,11 +308,12 @@
             id="email"
             placeholder="Email Address"
             name="email"
-            required
-          />
+            required />
           <label for="email">Email Address</label>
         </div>
+        <!-- Date Fields -->
         <div class="row">
+          <!-- Start Time -->
           <div class="form-floating col-lg-6 mb-3">
             <input
               required
@@ -361,21 +321,16 @@
               name="date"
               id="date"
               class="form-control"
-              onchange="checkDate()"
-            />
+              onchange="checkDate()" />
             <label class="ms-2" for="date">Start Time Building Is Needed</label>
           </div>
+          <!-- End Time -->
           <div class="form-floating col-lg-6 mb-3">
-            <input
-              required
-              type="datetime-local"
-              name="date2"
-              id="date2"
-              class="form-control"
-            />
+            <input required type="datetime-local" name="date2" id="date2" class="form-control" />
             <label class="ms-2" for="date2">End Time Building Is Needed</label>
           </div>
         </div>
+        <!-- Reason Field -->
         <div class="form-floating mb-3">
           <textarea
             class="form-control"
@@ -383,12 +338,12 @@
             id="field-c771266992e254f"
             name="field-c771266992e254f"
             style="height: 150px"
-            required
-          ></textarea>
+            required></textarea>
           <label for="field-c771266992e254f">Reason For Use</label>
         </div>
-
+        <!-- Rooms Needed Field -->
         <label class="form-label">What Rooms Will Be Needed</label>
+        <!-- Option 1 -->
         <div class="form-check form-switch">
           <input
             class="form-check-input"
@@ -396,12 +351,10 @@
             role="switch"
             name="field-038e996398a85f1[]"
             id="field-038e996398a85f1_0"
-            value="Fellowship Hall"
-          />
-          <label class="form-check-label" for="field-038e996398a85f1_0"
-            >Fellowship Hall</label
-          >
+            value="Fellowship Hall" />
+          <label class="form-check-label" for="field-038e996398a85f1_0">Fellowship Hall</label>
         </div>
+        <!-- Option 2 -->
         <div class="form-check form-switch">
           <input
             class="form-check-input"
@@ -409,12 +362,10 @@
             role="switch"
             name="field-038e996398a85f1[]"
             id="field-038e996398a85f1_1"
-            value="Bathrooms"
-          />
-          <label class="form-check-label" for="field-038e996398a85f1_1"
-            >Bathrooms</label
-          >
+            value="Bathrooms" />
+          <label class="form-check-label" for="field-038e996398a85f1_1">Bathrooms</label>
         </div>
+        <!-- Option 3 -->
         <div class="form-check form-switch">
           <input
             class="form-check-input"
@@ -422,12 +373,10 @@
             role="switch"
             name="field-038e996398a85f1[]"
             id="field-038e996398a85f1_2"
-            value="Kitchen"
-          />
-          <label class="form-check-label" for="field-038e996398a85f1_2"
-            >Kitchen</label
-          >
+            value="Kitchen" />
+          <label class="form-check-label" for="field-038e996398a85f1_2">Kitchen</label>
         </div>
+        <!-- Option 4 -->
         <div class="form-check form-switch">
           <input
             class="form-check-input"
@@ -435,12 +384,10 @@
             role="switch"
             name="field-038e996398a85f1[]"
             id="field-038e996398a85f1_3"
-            value="Sanctuary"
-          />
-          <label class="form-check-label" for="field-038e996398a85f1_3"
-            >Sanctuary</label
-          >
+            value="Sanctuary" />
+          <label class="form-check-label" for="field-038e996398a85f1_3">Sanctuary</label>
         </div>
+        <!-- Option 5 -->
         <div class="form-check form-switch">
           <input
             class="form-check-input"
@@ -448,12 +395,10 @@
             role="switch"
             name="field-038e996398a85f1[]"
             id="field-038e996398a85f1_4"
-            value="Sanctuary Overflow"
-          />
-          <label class="form-check-label" for="field-038e996398a85f1_4"
-            >Sanctuary Overflow</label
-          >
+            value="Sanctuary Overflow" />
+          <label class="form-check-label" for="field-038e996398a85f1_4">Sanctuary Overflow</label>
         </div>
+        <!-- Option 6 -->
         <div class="form-check form-switch mb-3">
           <input
             class="form-check-input"
@@ -461,13 +406,10 @@
             role="switch"
             name="field-038e996398a85f1[]"
             id="field-038e996398a85f1_5"
-            value="Class Rooms"
-          />
-          <label class="form-check-label" for="field-038e996398a85f1_5"
-            >Class Rooms</label
-          >
+            value="Class Rooms" />
+          <label class="form-check-label" for="field-038e996398a85f1_5">Class Rooms</label>
         </div>
-
+        <!-- Submit Button -->
         <button class="btn btn-primary w-100" type="submit">Submit form</button>
       </form>
     </div>
@@ -476,20 +418,13 @@
     <footer class="mb-sm-3 container mx-auto p-0">
       <div class="row mx-auto bg-dark shadow text-white rounded-sm-bottom">
         <!-- UMC Logo -->
-        <div
-          class="col-lg-1 col-md-2 col-sm-12 mt-2 mb-2 align-self-center text-center"
-        >
-          <a href="#"
-            ><img height="60" width="60" src="./images/white+umc+logo.png"
-          /></a>
+        <div class="col-lg-1 col-md-2 col-sm-12 mt-2 mb-2 align-self-center text-center">
+          <a href="#"><img height="60" width="60" src="./images/white+umc+logo.png" /></a>
         </div>
         <!-- Copyright Info -->
-        <div
-          class="col-lg-8 col-md-10 col-sm-12 mt-2 align-self-center text-center text-md-start"
-        >
+        <div class="col-lg-8 col-md-10 col-sm-12 mt-2 align-self-center text-center text-md-start">
           <p>
-            &copy; <span id="year"></span> - Van Meter United Methodist Church.
-            All rights reserved.
+            &copy; <span id="year"></span> - Van Meter United Methodist Church. All rights reserved.
           </p>
         </div>
         <!-- Social Media Text -->
@@ -497,9 +432,7 @@
           <p>Stay Connected</p>
         </div>
         <!-- Social Media Image -->
-        <div
-          class="col-lg-1 mt-2 ps-lg-0 mb-3 text-center text-lg-start align-self-center"
-        >
+        <div class="col-lg-1 mt-2 ps-lg-0 mb-3 text-center text-lg-start align-self-center">
           <a href="https://www.facebook.com/profile.php?id=100064317144537"
             ><img height="35" width="35" src="./images/facebook.png"
           /></a>
