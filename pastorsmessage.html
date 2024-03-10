@@ -1,381 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Preloading images for faster loading -->
-    <link rel="preload" href="./images/websitebanner.webp" as="image" fetchpriority="high" />
-    <link rel="preload" href="./images/websitebanner.jpg" as="image" fetchpriority="high" />
 
-    <!-- Linking required Javascript files -->
-    <script src="navbar.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+<head>
+  <!-- Preloading images for faster loading -->
+  <link rel="preload" href="./images/websitebanner.webp" as="image" fetchpriority="high" />
+  <link rel="preload" href="./images/websitebanner.jpg" as="image" fetchpriority="high" />
 
-    <!-- Linking required CSS files -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.01.min.css" />
-    <link rel="stylesheet" href="./index.css" />
+  <!-- Linking required Javascript files -->
+  <script src="navbar.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
 
-    <!-- Setting metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pastor&rsquo;s Message - Van Meter United Methodist Church</title>
-    <meta name="keywords" content="Van Meter United Methodist Church, Van Meter, VMUMC" />
-    <meta
-      name="description"
-      content="The Van Meter United Methodist Church site provides users with dates, times and details for the worship and fellowship of the congregation." />
-    <!-- Setting icon -->
-    <link rel="icon" href="./images/umc-logo.png" />
-  </head>
+  <!-- Linking required CSS files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.01.min.css" />
+  <link rel="stylesheet" href="./index.css" />
 
-  <body>
-    <!-- Banner section -->
-    <div id="banner" class="mt-sm-3 container mx-auto p-0 rounded-sm-top">
-      <picture>
-        <!-- Using WebP format for modern browsers -->
-        <source srcset="./images/websitebanner.webp" type="image/webp" />
-        <!-- Fallback to JPEG format for compatibility -->
-        <source srcset="./images/websitebanner.jpg" type="image/jpeg" />
-        <!-- Image tag with class for styling -->
-        <img class="w-100 rounded-sm-top" alt="VMUMC Banner" />
-      </picture>
-    </div>
+  <!-- Setting metadata -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pastor&rsquo;s Message - Van Meter United Methodist Church</title>
+  <meta name="keywords" content="Van Meter United Methodist Church, Van Meter, VMUMC" />
+  <meta name="description"
+    content="The Van Meter United Methodist Church site provides users with dates, times and details for the worship and fellowship of the congregation." />
+  <!-- Setting icon -->
+  <link rel="icon" href="./images/umc-logo.png" />
+</head>
 
-    <!-- Navbar section -->
-    <div id="navbar-container" class="container mx-auto p-0">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
-        <div class="container-fluid">
-          <!-- Brand -->
-          <a class="navbar-brand" href="#"
-            ><img height="24" width="24" src="./images/white+umc+logo.png" /> VMUMC</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarsExample05"
-            aria-controls="navbarsExample05"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<body>
+  <!-- Banner section -->
+  <div id="banner" class="mt-sm-3 container mx-auto p-0 rounded-sm-top">
+    <picture>
+      <!-- Using WebP format for modern browsers -->
+      <source srcset="./images/websitebanner.webp" type="image/webp" />
+      <!-- Fallback to JPEG format for compatibility -->
+      <source srcset="./images/websitebanner.jpg" type="image/jpeg" />
+      <!-- Image tag with class for styling -->
+      <img class="w-100 rounded-sm-top" alt="VMUMC Banner" />
+    </picture>
+  </div>
 
-          <div class="collapse navbar-collapse" id="navbarsExample05">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/kidscare.html"> Kids Care </a>
-              </li>
-              <!-- Dropdown menu -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Our Church</a
-                >
-                <ul class="dropdown-menu dropdown-menu-dark bg-dark shadow">
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/directions.html"> Church Directions </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/community.html"> Church Community </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/services.html"> Church Services </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/education.html"> Christian Education </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/staff.html"> Church Staff </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/beliefs.html"> Church Beliefs </a>
-                  </li>
-                </ul>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/worship.html"> Worship </a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/ministries.html"> Ministries </a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/photos.html"> Photos </a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/calendar.html"> Calendar </a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/publications.html"> Publications </a>
-              </li>
-              <!-- Dropdown menu -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Contact Us</a
-                >
-                <ul class="dropdown-menu dropdown-menu-dark bg-dark">
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/contact.html"> Contact Info </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/prayer-request.html"> Prayer Request </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/building-request.html">
-                      Building Use Request
-                    </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/information-request.html">
-                      Information Request
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+  <!-- Navbar section -->
+  <div id="navbar-container" class="container mx-auto p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img height="24" width="24" src="./images/white+umc+logo.png" /> VMUMC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/kidscare.html"> Kids Care </a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Our
+                Church</a>
+              <ul class="dropdown-menu dropdown-menu-dark bg-dark shadow">
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/directions.html"> Church Directions </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/community.html"> Church Community </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/services.html"> Church Services </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/education.html"> Christian Education </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/staff.html"> Church Staff </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/beliefs.html"> Church Beliefs </a>
+                </li>
+              </ul>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/worship.html"> Worship </a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/ministries.html"> Ministries </a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/photos.html"> Photos </a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/calendar.html"> Calendar </a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/publications.html"> Publications </a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contact
+                Us</a>
+              <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/contact.html"> Contact Info </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/prayer-request.html"> Prayer Request </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/building-request.html">
+                    Building Use Request
+                  </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/information-request.html">
+                    Information Request
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Search bar -->
+    <div class="container-fluid bg-dark pb-3">
+      <div class="row">
+        <div class="col">
+          <div class="autoComplete_wrapper">
+            <input id="autoComplete" type="search" dir="ltr" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="off"
+              placeholder="Search" />
           </div>
         </div>
-      </nav>
-      <!-- Search bar -->
-      <div class="container-fluid bg-dark pb-3">
+      </div>
+    </div>
+  </div>
+  <!-- Main content section -->
+  <div class="container mx-auto px-3 bg pb-5">
+    <!-- Header -->
+    <div class="row mx-auto pt-5 text-center">
+      <div class="col">
+        <h1>Pastor Beth's Message Blog</h1>
+      </div>
+    </div>
+    <!-- Secondary Header 1 -->
+    <div class="row mx-auto pt-3 text-center">
+      <div class="col">
+        <h5>We're glad you stopped by.</h5>
+      </div>
+    </div>
+    <!-- Divider -->
+    <div class="row mx-auto pt-3 text-center">
+      <div class="col">
+        <hr />
+      </div>
+    </div>
+    <!-- Heading Section -->
+    <div class="row mx-auto pt-3">
+      <!-- Pastors Image -->
+      <div class="col-lg-2 text-center">
+        <img class="w-50 w-lg-100 rounded" src="./images/PastorBeth2.jpg" alt="Pastor Beth" />
+      </div>
+      <div class="col-lg-10 text-center text-lg-start pt-3">
         <div class="row">
+          <!-- Secondary Header 2 -->
           <div class="col">
-            <div class="autoComplete_wrapper">
-              <input
-                id="autoComplete"
-                type="search"
-                dir="ltr"
-                spellcheck="false"
-                autocorrect="off"
-                autocomplete="off"
-                autocapitalize="off"
-                placeholder="Search" />
-            </div>
+            <h2>Connecting - March 2024</h2>
+          </div>
+        </div>
+        <!-- Secondary Header 3 -->
+        <div class="row pt-5">
+          <div class="col">
+            <h2>Marching Orders</h2>
           </div>
         </div>
       </div>
     </div>
-    <!-- Main content section -->
-    <div class="container mx-auto px-3 bg pb-5">
-      <!-- Header -->
-      <div class="row mx-auto pt-5 text-center">
-        <div class="col">
-          <h1>Pastor Beth's Message Blog</h1>
-        </div>
-      </div>
-      <!-- Secondary Header 1 -->
-      <div class="row mx-auto pt-3 text-center">
-        <div class="col">
-          <h5>We're glad you stopped by.</h5>
-        </div>
-      </div>
-      <!-- Divider -->
-      <div class="row mx-auto pt-3 text-center">
-        <div class="col">
-          <hr />
-        </div>
-      </div>
-      <!-- Heading Section -->
-      <div class="row mx-auto pt-3">
-        <!-- Pastors Image -->
-        <div class="col-lg-2 text-center">
-          <img class="w-50 w-lg-100 rounded" src="./images/PastorBeth2.jpg" alt="Pastor Beth" />
-        </div>
-        <div class="col-lg-10 text-center text-lg-start pt-3">
-          <div class="row">
-            <!-- Secondary Header 2 -->
-            <div class="col">
-              <h2>Connecting - March 2024</h2>
-            </div>
-          </div>
-          <!-- Secondary Header 3 -->
-          <div class="row pt-5">
-            <div class="col">
-              <h2>Marching Orders</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Pastors Message Paragraph 1 -->
-      <div class="row mx-auto pt-5">
-        <div class="col">
-          <div class="col">
-            <p>
-              March! Spring will arrive this month. The seasons are changing and it feels like time
-              is moving more quickly than ever, Marching on. Maybe it is all the changes that we are
-              experiencing. Technology and information are changing faster than ever and it is a lot
-              to take in. But much is the same. The seasons are much the same. The human body has
-              not really changed much in 100,000 years. Not even the capabilities of our human
-              brains have changed much. The brain and nervous system have the miraculous ability to
-              translate and integrate and organize all the feelings and information (mostly
-              subconscious) that is coming in through all the human senses. When we take the time to
-              realize just how much data this is that our miraculous body can handle, we know that
-              there is a
-              <em
-                >Spirit that connects it all, individually and socially, beyond any single human's
-                ability to consciously understand it.
-              </em>
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Pastors Message Paragraph 2 -->
-      <div class="row mx-auto">
+    <!-- Pastors Message Paragraph 1 -->
+    <div class="row mx-auto pt-5">
+      <div class="col">
         <div class="col">
           <p>
-            Why is it important to care about this? Well, there are those who want to work with
-            these new understandings for the betterment of all human life and the environment, and
-            there are those who do not. What is needed for humanity to continue to live well is
-            claimed by the Holy in Jeremiah 29:11:
-            <em
-              >"For surely I know the plans I have for you, says the Lord, plans for your welfare
-              and not for harm, to give you a future with hope." </em
-            >We have been given the ability to use our God-given abilities to discern together what
-            these plans are for the Holy to give us a future with hope. Then, through Christ, we
-            have been given a witness of how to go about it: with love and integrity.
+            March! Spring will arrive this month. The seasons are changing and it feels like time
+            is moving more quickly than ever, Marching on. Maybe it is all the changes that we are
+            experiencing. Technology and information are changing faster than ever and it is a lot
+            to take in. But much is the same. The seasons are much the same. The human body has
+            not really changed much in 100,000 years. Not even the capabilities of our human
+            brains have changed much. The brain and nervous system have the miraculous ability to
+            translate and integrate and organize all the feelings and information (mostly
+            subconscious) that is coming in through all the human senses. When we take the time to
+            realize just how much data this is that our miraculous body can handle, we know that
+            there is a
+            <em>Spirit that connects it all, individually and socially, beyond any single human's
+              ability to consciously understand it.
+            </em>
           </p>
         </div>
-      </div>
-      <!-- Pastors Message Paragraph 3 -->
-      <div class="row mx-auto">
-        <div class="col">
-          <p>
-            That sounds like marching orders to me! Each of us has received some understanding of
-            the plans that the Lord has for us, for ourselves but more importantly for all humanity;
-            we are each called to share what we have learned through our various spiritual gifts.
-          </p>
-        </div>
-      </div>
-      <!-- Pastors Message Paragraph 4 -->
-      <div class="row mx-auto">
-        <div class="col">
-          <p>
-            This Lenten season, I am called to share what I learn as I integrate scripture,
-            theology, and other evidence-based learnings on the subject of how we learn and teach.
-            It is important for all of us to share what the Holy is calling us to witness to others,
-            especially on how our children are being raised and taught.
-          </p>
-        </div>
-      </div>
-      <!-- Pastors Message Paragraph 5 -->
-      <div class="row mx-auto">
-        <div class="col">
-          <p>
-            We may each think that there are other people who know more than we know, but the
-            reality is that<em> it is our integrated understanding that is most important</em>. We
-            have many social and cultural "experiments" that we have learned from being together as
-            a society and even as a species. Why not take the time to listen to one another,
-            especially to those who find understanding through evidence-based and time-tested
-            research and study. But all of us need to get the basic understanding so that we can
-            move forward as a community within other communities in the wisest way.
-          </p>
-        </div>
-      </div>
-      <!-- Pastors Message Paragraph 6 -->
-      <div class="row mx-auto">
-        <div class="col">
-          <p>
-            As Christians, we feel that this way is for each to care, to strive to understand, and
-            to connect our common understanding.
-            <em
-              >All of us have access to this capacity, these miracles that are our body, mind, and
-              spirit</em
-            >. Our marching orders are to not sell this short! We are not to give away our
-            response-ability to use it and not let it be used or abused by others.
-          </p>
-        </div>
-      </div>
-      <!-- Pastors Message Paragraph 7 -->
-      <div class="row mx-auto">
-        <div class="col">
-          <p>
-            There is certain wisdom and practical knowledge that we can trust, especially when it is
-            tried and true; and there is some that we simply can't. Science and theology tell us
-            that it is the evidence-based that we can have the most faith in. Christian scripture
-            and discernment have given the world helpful social norms. Let us work together to
-            figure out what is most important for us to learn together to integrate for our common
-            understanding about love, life, and the future of humanity that the Holy has been
-            gradually developing for a long, long, long time.
-          </p>
-        </div>
-      </div>
-      <!-- Pastors Message Paragraph 8 -->
-      <div class="row mx-auto">
-        <div class="col">
-          <p>
-            I have faith in what John Wesley used as a method of integrating personal experience,
-            the experience of others, world-wide traditions, time-tested scripture, and our
-            God-given ability to reason. I think that this is a great method to discern with one
-            another.
-            <em
-              >Let's create some discussion groups to explore what our God is planning for us to
-              discern together for a greater common understanding of the Holy Plan for us!</em
-            >
-          </p>
-        </div>
-      </div>
-      <!-- Pastors Message Paragraph 9 -->
-      <div class="row mx-auto">
-        <p>We have our marching orders.</p>
-      </div>
-      <!-- Pastor Message Paragraph 10 -->
-      <div class="row mx-auto">
-        <p><em>Rev. Beth </em></p>
       </div>
     </div>
-    <!-- Footer Section -->
-    <footer class="mb-sm-3 container mx-auto p-0">
-      <div class="row mx-auto bg-dark shadow text-white rounded-sm-bottom">
-        <!-- UMC Logo -->
-        <div class="col-lg-1 col-md-2 col-sm-12 mt-2 mb-2 align-self-center text-center">
-          <a href="#"><img height="60" width="60" src="./images/white+umc+logo.png" /></a>
-        </div>
-        <!-- Copyright Info -->
-        <div class="col-lg-8 col-md-10 col-sm-12 mt-2 align-self-center text-center text-md-start">
-          <p>
-            &copy; <span id="year"></span> - Van Meter United Methodist Church. All rights reserved.
-          </p>
-        </div>
-        <!-- Social Media Text -->
-        <div class="col-lg-2 mt-2 text-center align-self-center text-lg-end">
-          <p>Stay Connected</p>
-        </div>
-        <!-- Social Media Image -->
-        <div class="col-lg-1 mt-2 ps-lg-0 mb-3 text-center text-lg-start align-self-center">
-          <a href="https://www.facebook.com/profile.php?id=100064317144537"
-            ><img height="35" width="35" src="./images/facebook.png"
-          /></a>
-        </div>
+    <!-- Pastors Message Paragraph 2 -->
+    <div class="row mx-auto">
+      <div class="col">
+        <p>
+          Why is it important to care about this? Well, there are those who want to work with
+          these new understandings for the betterment of all human life and the environment, and
+          there are those who do not. What is needed for humanity to continue to live well is
+          claimed by the Holy in Jeremiah 29:11:
+          <em>"For surely I know the plans I have for you, says the Lord, plans for your welfare
+            and not for harm, to give you a future with hope." </em>We have been given the ability to use our God-given
+          abilities to discern together what
+          these plans are for the Holy to give us a future with hope. Then, through Christ, we
+          have been given a witness of how to go about it: with love and integrity.
+        </p>
       </div>
-    </footer>
-  </body>
+    </div>
+    <!-- Pastors Message Paragraph 3 -->
+    <div class="row mx-auto">
+      <div class="col">
+        <p>
+          That sounds like marching orders to me! Each of us has received some understanding of
+          the plans that the Lord has for us, for ourselves but more importantly for all humanity;
+          we are each called to share what we have learned through our various spiritual gifts.
+        </p>
+      </div>
+    </div>
+    <!-- Pastors Message Paragraph 4 -->
+    <div class="row mx-auto">
+      <div class="col">
+        <p>
+          This Lenten season, I am called to share what I learn as I integrate scripture,
+          theology, and other evidence-based learnings on the subject of how we learn and teach.
+          It is important for all of us to share what the Holy is calling us to witness to others,
+          especially on how our children are being raised and taught.
+        </p>
+      </div>
+    </div>
+    <!-- Pastors Message Paragraph 5 -->
+    <div class="row mx-auto">
+      <div class="col">
+        <p>
+          We may each think that there are other people who know more than we know, but the
+          reality is that<em> it is our integrated understanding that is most important</em>. We
+          have many social and cultural "experiments" that we have learned from being together as
+          a society and even as a species. Why not take the time to listen to one another,
+          especially to those who find understanding through evidence-based and time-tested
+          research and study. But all of us need to get the basic understanding so that we can
+          move forward as a community within other communities in the wisest way.
+        </p>
+      </div>
+    </div>
+    <!-- Pastors Message Paragraph 6 -->
+    <div class="row mx-auto">
+      <div class="col">
+        <p>
+          As Christians, we feel that this way is for each to care, to strive to understand, and
+          to connect our common understanding.
+          <em>All of us have access to this capacity, these miracles that are our body, mind, and
+            spirit</em>. Our marching orders are to not sell this short! We are not to give away our
+          response-ability to use it and not let it be used or abused by others.
+        </p>
+      </div>
+    </div>
+    <!-- Pastors Message Paragraph 7 -->
+    <div class="row mx-auto">
+      <div class="col">
+        <p>
+          There is certain wisdom and practical knowledge that we can trust, especially when it is
+          tried and true; and there is some that we simply can't. Science and theology tell us
+          that it is the evidence-based that we can have the most faith in. Christian scripture
+          and discernment have given the world helpful social norms. Let us work together to
+          figure out what is most important for us to learn together to integrate for our common
+          understanding about love, life, and the future of humanity that the Holy has been
+          gradually developing for a long, long, long time.
+        </p>
+      </div>
+    </div>
+    <!-- Pastors Message Paragraph 8 -->
+    <div class="row mx-auto">
+      <div class="col">
+        <p>
+          I have faith in what John Wesley used as a method of integrating personal experience,
+          the experience of others, world-wide traditions, time-tested scripture, and our
+          God-given ability to reason. I think that this is a great method to discern with one
+          another.
+          <em>Let's create some discussion groups to explore what our God is planning for us to
+            discern together for a greater common understanding of the Holy Plan for us!</em>
+        </p>
+      </div>
+    </div>
+    <!-- Pastors Message Paragraph 9 -->
+    <div class="row mx-auto">
+      <p>We have our marching orders.</p>
+    </div>
+    <!-- Pastor Message Paragraph 10 -->
+    <div class="row mx-auto">
+      <p><em>Rev. Beth </em></p>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer class="mb-sm-3 container mx-auto p-0">
+    <div class="row mx-auto bg-dark shadow text-white rounded-sm-bottom">
+      <!-- UMC Logo -->
+      <div class="col-lg-1 col-md-2 col-sm-12 mt-2 mb-2 align-self-center text-center">
+        <a href="#"><img height="60" width="60" src="./images/white+umc+logo.png" /></a>
+      </div>
+      <!-- Copyright Info -->
+      <div class="col-lg-8 col-md-10 col-sm-12 mt-2 align-self-center text-center text-md-start">
+        <p>
+          &copy; <span id="year"></span> - Van Meter United Methodist Church. All rights reserved.
+        </p>
+      </div>
+      <!-- Social Media Text -->
+      <div class="col-lg-2 mt-2 text-center align-self-center text-lg-end">
+        <p>Stay Connected</p>
+      </div>
+      <!-- Social Media Image -->
+      <div class="col-lg-1 mt-2 ps-lg-0 mb-3 text-center text-lg-start align-self-center">
+        <a href="https://www.facebook.com/profile.php?id=100064317144537"><img height="35" width="35" src="./images/facebook.png" /></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

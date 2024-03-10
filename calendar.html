@@ -1,237 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Preloading images for faster loading -->
-    <link rel="preload" href="./images/websitebanner.webp" as="image" fetchpriority="high" />
-    <link rel="preload" href="./images/websitebanner.jpg" as="image" fetchpriority="high" />
-    <!-- Setting metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calendar - Van Meter United Methodist Church</title>
-    <meta name="keywords" content="Van Meter United Methodist Church, Van Meter, VMUMC" />
-    <meta
-      name="description"
-      content="The Van Meter United Methodist Church site provides users with dates, times and details for the worship and fellowship of the congregation." />
-    <!-- Setting icon -->
-    <link rel="icon" href="./images/umc-logo.png" />
 
-    <!-- Linking required Javascript files -->
-    <script src="navbar.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+<head>
+  <!-- Preloading images for faster loading -->
+  <link rel="preload" href="./images/websitebanner.webp" as="image" fetchpriority="high" />
+  <link rel="preload" href="./images/websitebanner.jpg" as="image" fetchpriority="high" />
+  <!-- Setting metadata -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendar - Van Meter United Methodist Church</title>
+  <meta name="keywords" content="Van Meter United Methodist Church, Van Meter, VMUMC" />
+  <meta name="description"
+    content="The Van Meter United Methodist Church site provides users with dates, times and details for the worship and fellowship of the congregation." />
+  <!-- Setting icon -->
+  <link rel="icon" href="./images/umc-logo.png" />
 
-    <!-- Linking required CSS files -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.01.min.css" />
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body>
-    <!-- Banner section -->
-    <div id="banner" class="mt-sm-3 container mx-auto p-0 rounded-sm-top">
-      <picture>
-        <!-- Using WebP format for modern browsers -->
-        <source srcset="./images/websitebanner.webp" type="image/webp" />
-        <!-- Fallback to JPEG format for compatibility -->
-        <source srcset="./images/websitebanner.jpg" type="image/jpeg" />
-        <!-- Image tag with class for styling -->
-        <img class="w-100 rounded-sm-top" alt="VMUMC Banner" />
-      </picture>
-    </div>
+  <!-- Linking required Javascript files -->
+  <script src="navbar.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
 
-    <!-- Navbar section -->
-    <div id="navbar-container" class="container mx-auto p-0">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
-        <div class="container-fluid">
-          <!-- Brand -->
-          <a class="navbar-brand" href="#"
-            ><img height="24" width="24" src="./images/white+umc+logo.png" /> VMUMC</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarsExample05"
-            aria-controls="navbarsExample05"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <!-- Linking required CSS files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.01.min.css" />
+  <link rel="stylesheet" href="./index.css" />
+</head>
 
-          <div class="collapse navbar-collapse" id="navbarsExample05">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/kidscare.html"> Kids Care </a>
-              </li>
-              <!-- Dropdown menu -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Our Church</a
-                >
-                <ul class="dropdown-menu dropdown-menu-dark bg-dark shadow">
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/directions.html"> Church Directions </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/community.html"> Church Community </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/services.html"> Church Services </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/education.html"> Christian Education </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/staff.html"> Church Staff </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/beliefs.html"> Church Beliefs </a>
-                  </li>
-                </ul>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/worship.html"> Worship </a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/ministries.html"> Ministries </a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/photos.html"> Photos </a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/calendar.html"> Calendar </a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/publications.html"> Publications </a>
-              </li>
-              <!-- Dropdown menu -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Contact Us</a
-                >
-                <ul class="dropdown-menu dropdown-menu-dark bg-dark">
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/contact.html"> Contact Info </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/prayer-request.html"> Prayer Request </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/building-request.html">
-                      Building Use Request
-                    </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/information-request.html">
-                      Information Request
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- Search bar -->
-      <div class="container-fluid bg-dark pb-3">
-        <div class="row">
-          <div class="col">
-            <div class="autoComplete_wrapper">
-              <input
-                id="autoComplete"
-                type="search"
-                dir="ltr"
-                spellcheck="false"
-                autocorrect="off"
-                autocomplete="off"
-                autocapitalize="off"
-                placeholder="Search" />
-            </div>
-          </div>
+<body>
+  <!-- Banner section -->
+  <div id="banner" class="mt-sm-3 container mx-auto p-0 rounded-sm-top">
+    <picture>
+      <!-- Using WebP format for modern browsers -->
+      <source srcset="./images/websitebanner.webp" type="image/webp" />
+      <!-- Fallback to JPEG format for compatibility -->
+      <source srcset="./images/websitebanner.jpg" type="image/jpeg" />
+      <!-- Image tag with class for styling -->
+      <img class="w-100 rounded-sm-top" alt="VMUMC Banner" />
+    </picture>
+  </div>
+
+  <!-- Navbar section -->
+  <div id="navbar-container" class="container mx-auto p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img height="24" width="24" src="./images/white+umc+logo.png" /> VMUMC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/kidscare.html"> Kids Care </a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Our
+                Church</a>
+              <ul class="dropdown-menu dropdown-menu-dark bg-dark shadow">
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/directions.html"> Church Directions </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/community.html"> Church Community </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/services.html"> Church Services </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/education.html"> Christian Education </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/staff.html"> Church Staff </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/beliefs.html"> Church Beliefs </a>
+                </li>
+              </ul>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/worship.html"> Worship </a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/ministries.html"> Ministries </a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/photos.html"> Photos </a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/calendar.html"> Calendar </a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/publications.html"> Publications </a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contact
+                Us</a>
+              <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/contact.html"> Contact Info </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/prayer-request.html"> Prayer Request </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/building-request.html">
+                    Building Use Request
+                  </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/information-request.html">
+                    Information Request
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <!-- Main content section -->
-    <div class="px-3 container mx-auto bg pb-5">
-      <!-- Header -->
-      <div class="row pt-5 mx-auto text-center">
-        <div class="col">
-          <h1>Church Calendar</h1>
-        </div>
-      </div>
-      <!-- Divider -->
+    </nav>
+    <!-- Search bar -->
+    <div class="container-fluid bg-dark pb-3">
       <div class="row">
         <div class="col">
-          <hr />
-        </div>
-      </div>
-      <!-- Calendar -->
-      <div class="row mx-auto pt-3">
-        <div class="col">
-          <iframe
-            src="//www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=9k15r4oj9pihte8nr4s3ra7qag%40group.calendar.google.com&amp;color=%23BE6D00&amp;src=a8so3okd24r3jbjr546tastrg0%40group.calendar.google.com&amp;color=%234A716C&amp;src=5cm43rq8vd82m98u7odb5jjmas%40group.calendar.google.com&amp;color=%23A32929&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FChicago"
-            class="border-0 rounded w-100"
-            height="600"
-            frameborder="0"
-            scrolling="no"></iframe>
+          <div class="autoComplete_wrapper">
+            <input id="autoComplete" type="search" dir="ltr" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="off"
+              placeholder="Search" />
+          </div>
         </div>
       </div>
     </div>
-    <!-- Footer Section -->
-    <footer class="mb-sm-3 container mx-auto p-0">
-      <div class="row mx-auto bg-dark shadow text-white rounded-sm-bottom">
-        <!-- UMC Logo -->
-        <div class="col-lg-1 col-md-2 col-sm-12 mt-2 mb-2 align-self-center text-center">
-          <a href="#"><img height="60" width="60" src="./images/white+umc+logo.png" /></a>
-        </div>
-        <!-- Copyright Info -->
-        <div class="col-lg-8 col-md-10 col-sm-12 mt-2 align-self-center text-center text-md-start">
-          <p>
-            &copy; <span id="year"></span> - Van Meter United Methodist Church. All rights reserved.
-          </p>
-        </div>
-        <!-- Social Media Text -->
-        <div class="col-lg-2 mt-2 text-center align-self-center text-lg-end">
-          <p>Stay Connected</p>
-        </div>
-        <!-- Social Media Image -->
-        <div class="col-lg-1 mt-2 ps-lg-0 mb-3 text-center text-lg-start align-self-center">
-          <a href="https://www.facebook.com/profile.php?id=100064317144537"
-            ><img height="35" width="35" src="./images/facebook.png"
-          /></a>
-        </div>
+  </div>
+  <!-- Main content section -->
+  <div class="px-3 container mx-auto bg pb-5">
+    <!-- Header -->
+    <div class="row pt-5 mx-auto text-center">
+      <div class="col">
+        <h1>Church Calendar</h1>
       </div>
-    </footer>
-  </body>
+    </div>
+    <!-- Divider -->
+    <div class="row">
+      <div class="col">
+        <hr />
+      </div>
+    </div>
+    <!-- Calendar -->
+    <div class="row mx-auto pt-3">
+      <div class="col">
+        <iframe
+          src="//www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=9k15r4oj9pihte8nr4s3ra7qag%40group.calendar.google.com&amp;color=%23BE6D00&amp;src=a8so3okd24r3jbjr546tastrg0%40group.calendar.google.com&amp;color=%234A716C&amp;src=5cm43rq8vd82m98u7odb5jjmas%40group.calendar.google.com&amp;color=%23A32929&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FChicago"
+          class="border-0 rounded w-100" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer class="mb-sm-3 container mx-auto p-0">
+    <div class="row mx-auto bg-dark shadow text-white rounded-sm-bottom">
+      <!-- UMC Logo -->
+      <div class="col-lg-1 col-md-2 col-sm-12 mt-2 mb-2 align-self-center text-center">
+        <a href="#"><img height="60" width="60" src="./images/white+umc+logo.png" /></a>
+      </div>
+      <!-- Copyright Info -->
+      <div class="col-lg-8 col-md-10 col-sm-12 mt-2 align-self-center text-center text-md-start">
+        <p>
+          &copy; <span id="year"></span> - Van Meter United Methodist Church. All rights reserved.
+        </p>
+      </div>
+      <!-- Social Media Text -->
+      <div class="col-lg-2 mt-2 text-center align-self-center text-lg-end">
+        <p>Stay Connected</p>
+      </div>
+      <!-- Social Media Image -->
+      <div class="col-lg-1 mt-2 ps-lg-0 mb-3 text-center text-lg-start align-self-center">
+        <a href="https://www.facebook.com/profile.php?id=100064317144537"><img height="35" width="35" src="./images/facebook.png" /></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

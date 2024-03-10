@@ -1,872 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Preloading images for faster loading -->
-    <link rel="preload" href="./images/websitebanner.webp" as="image" fetchpriority="high" />
-    <link rel="preload" href="./images/websitebanner.jpg" as="image" fetchpriority="high" />
-    <!-- Setting metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ministries - Van Meter United Methodist Church</title>
-    <meta name="keywords" content="Van Meter United Methodist Church, Van Meter, VMUMC" />
-    <meta
-      name="description"
-      content="The Van Meter United Methodist Church site provides users with dates, times and details for the worship and fellowship of the congregation." />
-    <!-- Setting icon -->
-    <link rel="icon" href="./images/umc-logo.png" />
 
-    <!-- Linking required Javascript files -->
-    <script src="navbar.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+<head>
+  <!-- Preloading images for faster loading -->
+  <link rel="preload" href="./images/websitebanner.webp" as="image" fetchpriority="high" />
+  <link rel="preload" href="./images/websitebanner.jpg" as="image" fetchpriority="high" />
+  <!-- Setting metadata -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ministries - Van Meter United Methodist Church</title>
+  <meta name="keywords" content="Van Meter United Methodist Church, Van Meter, VMUMC" />
+  <meta name="description"
+    content="The Van Meter United Methodist Church site provides users with dates, times and details for the worship and fellowship of the congregation." />
+  <!-- Setting icon -->
+  <link rel="icon" href="./images/umc-logo.png" />
 
-    <!-- Linking required CSS files -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.01.min.css" />
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body>
-    <!-- Banner section -->
-    <div id="banner" class="mt-sm-3 container mx-auto p-0 rounded-sm-top">
-      <picture>
-        <!-- Using WebP format for modern browsers -->
-        <source srcset="./images/websitebanner.webp" type="image/webp" />
-        <!-- Fallback to JPEG format for compatibility -->
-        <source srcset="./images/websitebanner.jpg" type="image/jpeg" />
-        <!-- Image tag with class for styling -->
-        <img class="w-100 rounded-sm-top" alt="VMUMC Banner" />
-      </picture>
-    </div>
+  <!-- Linking required Javascript files -->
+  <script src="navbar.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
 
-    <!-- Navbar section -->
-    <div id="navbar-container" class="container mx-auto p-0">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
-        <div class="container-fluid">
-          <!-- Brand -->
-          <a class="navbar-brand" href="#"
-            ><img height="24" width="24" src="./images/white+umc+logo.png" /> VMUMC</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarsExample05"
-            aria-controls="navbarsExample05"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <!-- Linking required CSS files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.01.min.css" />
+  <link rel="stylesheet" href="./index.css" />
+</head>
 
-          <div class="collapse navbar-collapse" id="navbarsExample05">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/kidscare.html"> Kids Care </a>
-              </li>
-              <!-- Dropdown menu -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Our Church</a
-                >
-                <ul class="dropdown-menu dropdown-menu-dark bg-dark shadow">
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/directions.html"> Church Directions </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/community.html"> Church Community </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/services.html"> Church Services </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/education.html"> Christian Education </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/staff.html"> Church Staff </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/beliefs.html"> Church Beliefs </a>
-                  </li>
-                </ul>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/worship.html"> Worship </a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/ministries.html"> Ministries </a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/photos.html"> Photos </a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/calendar.html"> Calendar </a>
-              </li>
-              <!-- Navigation link -->
-              <li class="nav-item">
-                <a class="nav-link" href="/publications.html"> Publications </a>
-              </li>
-              <!-- Dropdown menu -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Contact Us</a
-                >
-                <ul class="dropdown-menu dropdown-menu-dark bg-dark">
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/contact.html"> Contact Info </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/prayer-request.html"> Prayer Request </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/building-request.html">
-                      Building Use Request
-                    </a>
-                  </li>
-                  <!-- Dropdown item -->
-                  <li>
-                    <a class="dropdown-item" href="/information-request.html">
-                      Information Request
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+<body>
+  <!-- Banner section -->
+  <div id="banner" class="mt-sm-3 container mx-auto p-0 rounded-sm-top">
+    <picture>
+      <!-- Using WebP format for modern browsers -->
+      <source srcset="./images/websitebanner.webp" type="image/webp" />
+      <!-- Fallback to JPEG format for compatibility -->
+      <source srcset="./images/websitebanner.jpg" type="image/jpeg" />
+      <!-- Image tag with class for styling -->
+      <img class="w-100 rounded-sm-top" alt="VMUMC Banner" />
+    </picture>
+  </div>
+
+  <!-- Navbar section -->
+  <div id="navbar-container" class="container mx-auto p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img height="24" width="24" src="./images/white+umc+logo.png" /> VMUMC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/kidscare.html"> Kids Care </a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Our
+                Church</a>
+              <ul class="dropdown-menu dropdown-menu-dark bg-dark shadow">
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/directions.html"> Church Directions </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/community.html"> Church Community </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/services.html"> Church Services </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/education.html"> Christian Education </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/staff.html"> Church Staff </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/beliefs.html"> Church Beliefs </a>
+                </li>
+              </ul>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/worship.html"> Worship </a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/ministries.html"> Ministries </a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/photos.html"> Photos </a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/calendar.html"> Calendar </a>
+            </li>
+            <!-- Navigation link -->
+            <li class="nav-item">
+              <a class="nav-link" href="/publications.html"> Publications </a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contact
+                Us</a>
+              <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/contact.html"> Contact Info </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/prayer-request.html"> Prayer Request </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/building-request.html">
+                    Building Use Request
+                  </a>
+                </li>
+                <!-- Dropdown item -->
+                <li>
+                  <a class="dropdown-item" href="/information-request.html">
+                    Information Request
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- Search bar -->
-      <div class="container-fluid bg-dark pb-3">
-        <div class="row">
-          <div class="col">
-            <div class="autoComplete_wrapper">
-              <input
-                id="autoComplete"
-                type="search"
-                dir="ltr"
-                spellcheck="false"
-                autocorrect="off"
-                autocomplete="off"
-                autocapitalize="off"
-                placeholder="Search" />
-            </div>
+      </div>
+    </nav>
+    <!-- Search bar -->
+    <div class="container-fluid bg-dark pb-3">
+      <div class="row">
+        <div class="col">
+          <div class="autoComplete_wrapper">
+            <input id="autoComplete" type="search" dir="ltr" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="off"
+              placeholder="Search" />
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Main content section -->
-    <div class="px-3 container mx-auto bg pb-5">
-      <!-- Header -->
-      <div class="row mx-auto text-center pt-5">
-        <div class="col">
-          <h1>Making a Difference in the Community Through Faith</h1>
-        </div>
+  <!-- Main content section -->
+  <div class="px-3 container mx-auto bg pb-5">
+    <!-- Header -->
+    <div class="row mx-auto text-center pt-5">
+      <div class="col">
+        <h1>Making a Difference in the Community Through Faith</h1>
       </div>
-      <!-- Divider -->
-      <div class="row mx-auto pt-3">
-        <div class="col">
-          <hr />
-        </div>
+    </div>
+    <!-- Divider -->
+    <div class="row mx-auto pt-3">
+      <div class="col">
+        <hr />
       </div>
-      <!-- Mission Moment Link -->
-      <div class="row mx-auto text-center pt-3">
-        <a class="btn btn-outline-secondary my-3" href="/missionmoment.html">
-          View The Latest Mission Moment
-        </a>
+    </div>
+    <!-- Mission Moment Link -->
+    <div class="row mx-auto text-center pt-3">
+      <a class="btn btn-outline-secondary my-3" href="/missionmoment.html">
+        View The Latest Mission Moment
+      </a>
+    </div>
+    <!-- Secondary Header 1 -->
+    <div class="row mx-auto text-center pt-3">
+      <div class="col">
+        <h2>Church Outreach</h2>
       </div>
-      <!-- Secondary Header 1 -->
-      <div class="row mx-auto text-center pt-3">
-        <div class="col">
-          <h2>Church Outreach</h2>
-        </div>
-      </div>
-      <!-- Church Outreach Section -->
-      <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto justify-content-center pt-3">
-        <!-- Camp Sunday -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Camp Sunday/Campership</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="https://www.iaumc.org/camps">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Vacation Bible School -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Vacation Bible School</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a type="button" class="btn btn-sm btn-outline-secondary" href="/VBS.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Christmas Food Distribution -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Christmas food gift card distribution</p>
-            </div>
-          </div>
-        </div>
-        <!-- Assistance Fund -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Assistance Fund</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/Publications/Adel_Ministerial_Assn_Emergency_Fund.pdf">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Kids Care -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Kids Care</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a type="button" class="btn btn-sm btn-outline-secondary" href="/kidsCare.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Kids Shopping Day -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Kids Shopping Day</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group mt-auto">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/MinistryKidsShoppingDay.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Scholarships -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">
-                Scholarship (Memorial) grants to college and trade school students
-              </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group mt-auto">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/scholarships.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Easter Egg Hunt -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Easter Egg Hunt</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group mt-auto">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/MinistryEasterEggHunt.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Trunk Or Treat -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Trunk or Treat</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group mt-auto">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/trunkortreat.html">
-                    Learn More
-                  </a>
-                </div>
+    </div>
+    <!-- Church Outreach Section -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto justify-content-center pt-3">
+      <!-- Camp Sunday -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Camp Sunday/Campership</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="https://www.iaumc.org/camps">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Secondary Header 2 -->
-      <div class="row mx-auto text-center pt-5">
-        <div class="col">
-          <h2>Missions of the Church</h2>
-        </div>
-      </div>
-      <!-- Missions Of The Church Section -->
-      <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto justify-content-center pt-3">
-        <!-- Alternative Christmas Giving -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Alternative Christmas Giving</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/alternativechristmasgiving.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- In Mission Together -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">In Mission Together</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="https://www.iaumc.org/inmissiontogether">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Mission of the Month -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Mission of the Month</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/missionmoment.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Women at the Well -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Women at the Well United Methodist Church at Mitchellville</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="https://www.iaumc.org/churchdetail/461997">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Luke DeBoer Support -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Continuing support of Luke DeBoer (missionary in Puerto Rico)</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/Publications/LukeDeBoerUpdate.pdf">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- UMCOR -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">UMCOR: United Methodist Committee on Relief</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group mt-auto">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="https://umcmission.org/umcor/">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Pastor Jude -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Support for Pastor Jude at PCMP in Haiti</p>
-            </div>
-          </div>
-        </div>
-        <!-- Food Pantry -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Support of Good Samaritan Food Pantry in Adel</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group mt-auto">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/Publications/MissionsFoodPantry.pdf">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Ingathering -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Participation in Ingathering</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group mt-auto">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="https://www.iaumc.org/historyofthethanksgivingingathering">
-                    Learn More
-                  </a>
-                </div>
+      <!-- Vacation Bible School -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Vacation Bible School</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/VBS.html">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Secondary Header 3 -->
-      <div class="row mx-auto text-center pt-5">
-        <div class="col">
-          <h2>Church Groups</h2>
+      <!-- Christmas Food Distribution -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Christmas food gift card distribution</p>
+          </div>
         </div>
       </div>
-      <!-- Church Groups Section -->
-      <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto justify-content-center pt-3">
-        <!-- Discussion Group -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Adult Discussion Group</p>
-            </div>
-          </div>
-        </div>
-        <!-- Choir -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Chancel Choir & Praise Team</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a type="button" class="btn btn-sm btn-outline-secondary" href="/choir.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Youth Group -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">S.W.A.G. Youth Group</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a type="button" class="btn btn-sm btn-outline-secondary" href="/ciayouth.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Confirmation -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Confirmation Classes</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/MinistryConfirmation.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Exercise Your Faith -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Exercise Your Faith Small Group Study</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/Publications/ExerciseYourFaith.pdf">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- JAM -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">J.A.M. "Jesus and Me" Wednesday evenings (children)</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group mt-auto">
-                  <a type="button" class="btn btn-sm btn-outline-secondary" href="/JAM.html">
-                    Learn More
-                  </a>
-                </div>
+      <!-- Assistance Fund -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Assistance Fund</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/Publications/Adel_Ministerial_Assn_Emergency_Fund.pdf">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Secondary Header 4 -->
-      <div class="row mx-auto text-center pt-5">
-        <div class="col">
-          <h2>Activities/Events</h2>
+      <!-- Kids Care -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Kids Care</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/kidsCare.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Activities / Events Section -->
-      <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto justify-content-center pt-3">
-        <!-- Bible Presentation -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Bible Presentation</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/3rdGradeBibleClass.html">
-                    Learn More
-                  </a>
-                </div>
+      <!-- Kids Shopping Day -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Kids Shopping Day</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group mt-auto">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/MinistryKidsShoppingDay.html">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <!-- Recycling -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Recycling Aluminum Cans</p>
-            </div>
-          </div>
-        </div>
-        <!-- Conference Report -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Annual Conference Report to Congregation</p>
-            </div>
-          </div>
-        </div>
-        <!-- Graduation -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">High School Senior Graduation Sunday</p>
-            </div>
-          </div>
-        </div>
-        <!-- Special Services -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Special Services</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/specialservices.html">
-                    Learn More
-                  </a>
-                </div>
+      </div>
+      <!-- Scholarships -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">
+              Scholarship (Memorial) grants to college and trade school students
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group mt-auto">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/scholarships.html">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <!-- Casual Worship -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Casual Worship Service (3rd Sunday of the month)</p>
-            </div>
-          </div>
-        </div>
-        <!-- Children's Christmas Program -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Children's Christmas Program</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/MinistryChildrensChristmasProgram.html">
-                    Learn More
-                  </a>
-                </div>
+      </div>
+      <!-- Easter Egg Hunt -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Easter Egg Hunt</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group mt-auto">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/MinistryEasterEggHunt.html">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <!-- Bread Ministry -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Bread Ministry</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/MinistryBread.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Raccoon River Days -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Raccoon River Days participation</p>
-            </div>
-          </div>
-        </div>
-        <!-- Choir Christmas Cantata -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Choir Christmas Cantata</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/MinistryChristmasCantata.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Easter Breakfast -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Easter Breakfast</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group mt-auto">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/MinistryEasterBreakfast.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Recycled Cars -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Cards Recycled by SAM</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group mt-auto">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/Publications/SAM_card_ministry.pdf">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Christmas Eve Service -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Christmas Eve Candlelight Services</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group mt-auto">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/MinistryChristmasEveCandlelight.html">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Coop's Troup -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Coop’s Troup (Summer Music Event)</p>
-            </div>
-          </div>
-        </div>
-        <!-- Pancake Supper -->
-        <div class="col">
-          <div class="card shadow-sm bg-dark text-white h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <p class="card-text">Shrove Tuesday Pancake Supper</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group mt-auto">
-                  <a
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                    href="/MinistryShroveTuesday.html">
-                    Learn More
-                  </a>
-                </div>
+      </div>
+      <!-- Trunk Or Treat -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Trunk or Treat</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group mt-auto">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/trunkortreat.html">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer Section -->
-    <footer class="mb-sm-3 container mx-auto p-0">
-      <div class="row mx-auto bg-dark shadow text-white rounded-sm-bottom">
-        <!-- UMC Logo -->
-        <div class="col-lg-1 col-md-2 col-sm-12 mt-2 mb-2 align-self-center text-center">
-          <a href="#"><img height="60" width="60" src="./images/white+umc+logo.png" /></a>
-        </div>
-        <!-- Copyright Info -->
-        <div class="col-lg-8 col-md-10 col-sm-12 mt-2 align-self-center text-center text-md-start">
-          <p>
-            &copy; <span id="year"></span> - Van Meter United Methodist Church. All rights reserved.
-          </p>
-        </div>
-        <!-- Social Media Text -->
-        <div class="col-lg-2 mt-2 text-center align-self-center text-lg-end">
-          <p>Stay Connected</p>
-        </div>
-        <!-- Social Media Image -->
-        <div class="col-lg-1 mt-2 ps-lg-0 mb-3 text-center text-lg-start align-self-center">
-          <a href="https://www.facebook.com/profile.php?id=100064317144537"
-            ><img height="35" width="35" src="./images/facebook.png"
-          /></a>
+    <!-- Secondary Header 2 -->
+    <div class="row mx-auto text-center pt-5">
+      <div class="col">
+        <h2>Missions of the Church</h2>
+      </div>
+    </div>
+    <!-- Missions Of The Church Section -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto justify-content-center pt-3">
+      <!-- Alternative Christmas Giving -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Alternative Christmas Giving</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/alternativechristmasgiving.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-  </body>
+      <!-- In Mission Together -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">In Mission Together</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="https://www.iaumc.org/inmissiontogether">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mission of the Month -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Mission of the Month</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/missionmoment.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Women at the Well -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Women at the Well United Methodist Church at Mitchellville</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="https://www.iaumc.org/churchdetail/461997">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Luke DeBoer Support -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Continuing support of Luke DeBoer (missionary in Puerto Rico)</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/Publications/LukeDeBoerUpdate.pdf">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- UMCOR -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">UMCOR: United Methodist Committee on Relief</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group mt-auto">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="https://umcmission.org/umcor/">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pastor Jude -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Support for Pastor Jude at PCMP in Haiti</p>
+          </div>
+        </div>
+      </div>
+      <!-- Food Pantry -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Support of Good Samaritan Food Pantry in Adel</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group mt-auto">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/Publications/MissionsFoodPantry.pdf">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ingathering -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Participation in Ingathering</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group mt-auto">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="https://www.iaumc.org/historyofthethanksgivingingathering">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Secondary Header 3 -->
+    <div class="row mx-auto text-center pt-5">
+      <div class="col">
+        <h2>Church Groups</h2>
+      </div>
+    </div>
+    <!-- Church Groups Section -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto justify-content-center pt-3">
+      <!-- Discussion Group -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Adult Discussion Group</p>
+          </div>
+        </div>
+      </div>
+      <!-- Choir -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Chancel Choir & Praise Team</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/choir.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Youth Group -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">S.W.A.G. Youth Group</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/ciayouth.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Confirmation -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Confirmation Classes</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/MinistryConfirmation.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Exercise Your Faith -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Exercise Your Faith Small Group Study</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/Publications/ExerciseYourFaith.pdf">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- JAM -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">J.A.M. "Jesus and Me" Wednesday evenings (children)</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group mt-auto">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/JAM.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Secondary Header 4 -->
+    <div class="row mx-auto text-center pt-5">
+      <div class="col">
+        <h2>Activities/Events</h2>
+      </div>
+    </div>
+    <!-- Activities / Events Section -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-auto justify-content-center pt-3">
+      <!-- Bible Presentation -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Bible Presentation</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/3rdGradeBibleClass.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Recycling -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Recycling Aluminum Cans</p>
+          </div>
+        </div>
+      </div>
+      <!-- Conference Report -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Annual Conference Report to Congregation</p>
+          </div>
+        </div>
+      </div>
+      <!-- Graduation -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">High School Senior Graduation Sunday</p>
+          </div>
+        </div>
+      </div>
+      <!-- Special Services -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Special Services</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/specialservices.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Casual Worship -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Casual Worship Service (3rd Sunday of the month)</p>
+          </div>
+        </div>
+      </div>
+      <!-- Children's Christmas Program -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Children's Christmas Program</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/MinistryChildrensChristmasProgram.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bread Ministry -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Bread Ministry</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/MinistryBread.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Raccoon River Days -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Raccoon River Days participation</p>
+          </div>
+        </div>
+      </div>
+      <!-- Choir Christmas Cantata -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Choir Christmas Cantata</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/MinistryChristmasCantata.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Easter Breakfast -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Easter Breakfast</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group mt-auto">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/MinistryEasterBreakfast.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Recycled Cars -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Cards Recycled by SAM</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group mt-auto">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/Publications/SAM_card_ministry.pdf">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Christmas Eve Service -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Christmas Eve Candlelight Services</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group mt-auto">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/MinistryChristmasEveCandlelight.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Coop's Troup -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Coop’s Troup (Summer Music Event)</p>
+          </div>
+        </div>
+      </div>
+      <!-- Pancake Supper -->
+      <div class="col">
+        <div class="card shadow-sm bg-dark text-white h-100">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">Shrove Tuesday Pancake Supper</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group mt-auto">
+                <a type="button" class="btn btn-sm btn-outline-secondary" href="/MinistryShroveTuesday.html">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer class="mb-sm-3 container mx-auto p-0">
+    <div class="row mx-auto bg-dark shadow text-white rounded-sm-bottom">
+      <!-- UMC Logo -->
+      <div class="col-lg-1 col-md-2 col-sm-12 mt-2 mb-2 align-self-center text-center">
+        <a href="#"><img height="60" width="60" src="./images/white+umc+logo.png" /></a>
+      </div>
+      <!-- Copyright Info -->
+      <div class="col-lg-8 col-md-10 col-sm-12 mt-2 align-self-center text-center text-md-start">
+        <p>
+          &copy; <span id="year"></span> - Van Meter United Methodist Church. All rights reserved.
+        </p>
+      </div>
+      <!-- Social Media Text -->
+      <div class="col-lg-2 mt-2 text-center align-self-center text-lg-end">
+        <p>Stay Connected</p>
+      </div>
+      <!-- Social Media Image -->
+      <div class="col-lg-1 mt-2 ps-lg-0 mb-3 text-center text-lg-start align-self-center">
+        <a href="https://www.facebook.com/profile.php?id=100064317144537"><img height="35" width="35" src="./images/facebook.png" /></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
