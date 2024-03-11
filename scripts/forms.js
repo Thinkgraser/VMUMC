@@ -12,6 +12,7 @@ function handleSubmit(id) {
 }
 // Formats Phone Number
 function formatPhone(event, id) {
+  // end function if delete or backspace is key pressed
   if (event && (event.keyCode == 46 || event.keyCode == 8)) {
     return;
   }
@@ -30,7 +31,8 @@ function checkDate() {
 
   // Check if end time is not set or if it's set to a date before start time
   if (!endDateInput.value || endDate < startDate) {
-    endDateInput.value = startDateInput.value; // Set end time to start time
+    // Set end time to start time
+    endDateInput.value = startDateInput.value;
   }
 }
 
