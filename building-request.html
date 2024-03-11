@@ -58,6 +58,7 @@
       var startDate = new Date(startDateInput.value);
       var endDateInput = document.getElementById("date2");
       var endDate = new Date(endDateInput.value);
+      endDateInput.setAttribute("min", startDate.toISOString().slice(0, 16));
 
       // Check if end time is not set or if it's set to a date before start time
       if (!endDateInput.value || endDate < startDate) {
@@ -297,7 +298,7 @@
         </div>
         <!-- End Time -->
         <div class="form-floating col-lg-6 mb-3">
-          <input required type="datetime-local" name="date2" id="date2" class="form-control" />
+          <input required type="datetime-local" name="date2" id="date2" class="form-control" min="" />
           <label class="ms-2" for="date2">End Time Building Is Needed</label>
         </div>
       </div>
