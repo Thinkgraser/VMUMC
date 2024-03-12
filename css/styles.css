@@ -1,12 +1,19 @@
 /* Bootstrap documentation https://getbootstrap.com/docs/5.3/getting-started/introduction/ */
-@import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/scss/_variables.scss";
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css";
+
 /* Link Color */
-a {
-  color: var(--bs-danger);
+a:not(.nav-link, .navbar-brand, .dropdown-item) {
+  color: red;
+
 }
 
-a:hover {
-  color: var(--bs-purple);
+a:not(.nav-link, .navbar-brand, .dropdown-item):hover {
+
+  color: rgb(255, 98, 0);
+}
+
+a:not(.nav-link, .navbar-brand, .dropdown-item):visited{
+  color: rgb(255, 0, 234);
 }
 /* Dropdown Menu */
 .dropdown-item {
