@@ -1,7 +1,6 @@
 // Sets start date fields minimum selectable date and time to the current date and time
 document.addEventListener("DOMContentLoaded", function (event) {
-  if (window.location.href.includes("building-request.html")) {
-    console.log("Hi");
+  if (window.location.href.includes("building-request")) {
     var date = new Date();
     var startDateInput = document.getElementById("date");
     startDateInput.setAttribute(
