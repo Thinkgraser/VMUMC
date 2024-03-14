@@ -1,4 +1,17 @@
-function handleSubmit(id) {
+// Sets start date fields minimum selectable date and time to the current date and time
+document.addEventListener("DOMContentLoaded", function (event) {
+  if (window.location.href.includes("building-request.html")) {
+    console.log("Hi");
+    var date = new Date();
+    var startDateInput = document.getElementById("date");
+    startDateInput.setAttribute(
+      "min",
+      new Date(date.getTime() - date.getTimezoneOffset() * 60000).toISOString().slice(0, 16)
+    );
+  }
+});
+
+function handleSubmit(event, id) {
   // Checks if at least 1 checkbox is checked and cancels submission if not
   if (!CheckForCheckedCheckbox()) {
     return false;
@@ -6,14 +19,14 @@ function handleSubmit(id) {
   // Formats Date For Submission
   formatDate();
   // Ensure phone number is formatted correctly before submitting
-  formatPhone(id);
+  formatPhone(event, id);
 
   return true;
 }
 // Formats Phone Number
 function formatPhone(event, id) {
   // end function if delete or backspace is key pressed
-  if (event && (event.keyCode == 46 || event.keyCode == 8)) {
+  if (event.keyCode && (event.keyCode == 46 || event.keyCode == 8)) {
     return;
   }
   const phoneInput = document.getElementById(id);
