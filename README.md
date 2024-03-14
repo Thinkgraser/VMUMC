@@ -48,4 +48,38 @@ var searchData = [
   { keywords: ["keyword1 ", "keyword 2"], url: "/url.html" },
 ];
 ```
-## CSS Classes
+## Bootstrap CSS Classes
+Most CSS classes being used are from [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- pt-#  padding top
+- pb-# margin bottom
+- mt-# margin top
+- mb-# margin bottom
+- ms-# margin left
+- mx-auto  sets margin left and right to auto
+- align-self-center  verticaly aligns center
+- text-center  horizantally aligns center
+- text-start  horizantally aligns left
+- text-end  horizantally aligns right
+- rounded  rounds corners
+- w-#  width of 25, 50, 75 or 100%
+- row  outside container for col that allows items to be set next to eachother horizantally
+- col  container for items to be placed into row, can be used with just col for 100% width of the row container or you can specify how wide by doing col- #, # must be between 1 and 12
+- d-flex  display of flex
+- flex-column  flex-direction of column
+- flex-row  flex direction of row
+- container  container for all the content
+- container-fluid  another container for all the content
+- nav-item  outside container for navigation item
+- nav-link  link and text for nav item
+- active  set text color to white
+- dropdown  outside container for navbar dropdown
+- dropdown-toggle  container for dropdown menu toggler that controls dropdown menu
+- dropdown-item  link and text for dropdown navigation item
+- bg-dark  sets the background color
+- navbar-dark  sets color of navbar text for dark background
+- shadow  adds a box shaddow
+- btn  padding for a button, add btn-color to give button color
+- form-floating  css to add label into input box
+- form-control  padding and sets heights of input
+-   A lot of classes will have a -lg or -md or -sm in them, this only enables them when they are over the width for that media query -lg: max-width: 992px, -md: max-width: 768px, -sm: max-width: 576px; if a col has a -lg -md or -sm it will colapse down fromm multiple columns per row into a single column per row at that media query.
+
