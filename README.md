@@ -55,6 +55,7 @@ Most CSS classes being used are from [Bootstrap](https://getbootstrap.com/docs/5
 - mt-# margin top
 - mb-# margin bottom
 - ms-# margin left
+- me-# margin right
 - mx-auto  sets margin left and right to auto
 - align-self-center  verticaly aligns center
 - text-center  horizantally aligns center
@@ -81,5 +82,5 @@ Most CSS classes being used are from [Bootstrap](https://getbootstrap.com/docs/5
 - btn  padding for a button, add btn-color to give button color
 - form-floating  css to add label into input box
 - form-control  padding and sets heights of input
--   A lot of classes will have a -lg or -md or -sm in them, this only enables them when they are over the width for that media query -lg: max-width: 992px, -md: max-width: 768px, -sm: max-width: 576px; if a col has a -lg -md or -sm it will colapse down fromm multiple columns per row into a single column per row at that media query.
+-   A lot of classes will have a -lg or -md or -sm in them, this only enables them when they are over the width for that media query -lg: max-width: 992px, -md: max-width: 768px, -sm: max-width: 576px; if a col has a -lg -md or -sm it will colapse down from multiple columns per row into a single column per row at that media query.
 
