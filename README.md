@@ -41,7 +41,7 @@ You can also have the url take the user to a certain point on the page by using 
 ```
 url: "url.html#id"
 ```
-Full Examlple
+Full Example
 ```
 var searchData = [
   { keywords: "keyword 1", url: "/url.html#id" },
