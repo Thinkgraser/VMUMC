@@ -1,5 +1,5 @@
 // Map of keywords and the pages a match will send them to
-var sampleData = [
+var searchData = [
   { keywords: "Home", url: "/" },
   { keywords: "Kids Care", url: "/kidsCare.html" },
   { keywords: "Directions", url: "/directions.html" },
@@ -173,7 +173,7 @@ var sampleData = [
 const autoCompleteJS = new autoComplete({
   selector: "#autoComplete",
   data: {
-    src: sampleData.map((item) => item.keywords).flat(), // Use values from sampleData
+    src: searchData.map((item) => item.keywords).flat(), // Use values from searchData
     cache: true,
   },
   resultsList: {
@@ -199,7 +199,7 @@ const autoCompleteJS = new autoComplete({
     input: {
       selection: (event) => {
         const selection = event.detail.selection.value;
-        const selectedData = sampleData.find((item) =>
+        const selectedData = searchData.find((item) =>
           Array.isArray(item.keywords)
             ? item.keywords.includes(selection)
             : item.keywords === selection
