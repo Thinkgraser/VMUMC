@@ -12,11 +12,10 @@ window.addEventListener("scroll", function () {
 
 // Add active class to the list item containing the current page link
 document.addEventListener("DOMContentLoaded", function () {
-  let currentPageUrl = window.location.href.split(".html")[0].trim().toLowerCase() + ".html";
-
+  let currentPageUrl = window.location.pathname;
   const navbarLinks = document.querySelectorAll("li a.nav-link");
   navbarLinks.forEach((link) => {
-    const linkUrl = link.href.split(".html")[0].trim().toLowerCase() + ".html";
+    const linkUrl = link.getAttribute("href");
     if (linkUrl === currentPageUrl && !link.classList.contains("dropdown-toggle")) {
       link.classList.add("active");
     }
@@ -25,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Check dropdown menu items and set active class for dropdown items
   const dropdownItems = document.querySelectorAll(".dropdown-item");
   dropdownItems.forEach((item) => {
-    const itemUrl = item.href.split(".html")[0].trim().toLowerCase() + ".html";
+    const itemUrl = item.getAttribute("href");
     if (itemUrl === currentPageUrl) {
       item.classList.add("active");
       const dropdownToggle = item.closest(".dropdown").querySelector(".dropdown-toggle");
